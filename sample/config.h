@@ -14,7 +14,8 @@
  * limitations under the License.
  */
 
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_SAMPLE_CONFIG_H
+#define _PDS_CPP_SDK_WRAPPER_SAMPLE_CONFIG_H
 
 char* gEndpoint = "https://sg1.api.aliyunpds.com";
 char* gAccessToken = "xxxxxx";
@@ -24,3 +25,5 @@ char *gFileID = "6177d260c370e4ed12804b79a5cc6c449086a123";
 
 char *gUploadFilePath = "/Users/xxxxxx/Desktop/testdata/图片测试.xlsx";
 char *gDownloadFilePath = "/Users/xxxxxx/Desktop/a.data";
+
+#endif
