@@ -25,7 +25,7 @@
 char sTestFileID[1024] = "";
 char sTestAsyncTaskID[1024] = "";
 const int32_t ProgressControlStopAfterCallTimes = 600;
-const int32_t ProgressControlCancelAfterCallTimes = 200;
+const int32_t ProgressControlCancelAfterCallTimes = 500;
 int32_t progressControlCallTimes = 0;
 
 
@@ -471,7 +471,7 @@ int testCreateFile(hPdsClient client) {
 
 int testResumableFileUpload(hPdsClient client) {
     printf("==============ResumableFileUpload==============\n");
-    hFileUploadRequest fileUploadReq = hFileUploadRequest_New_2(gDriveID, "root", "test.dat1111", "", "ignore", gLocalFilePath);
+    hFileUploadRequest fileUploadReq = hFileUploadRequest_New_2(gDriveID, "root", "test.dat1111", "", "ignore", gUploadFilePath);
 
     char* data = "123";
     hTransferProgress progress = hTransferProgress_New(&ProgressCallback, data);
@@ -496,19 +496,52 @@ int testResumableFileUpload(hPdsClient client) {
     return 0;
 }
 
+int testResumableFileDownload(hPdsClient client) {
+    printf("==============ResumableFileDownload==============\n");
+    hFileDownloadRequest fileDownloadReq = hFileDownloadRequest_New_1(gDriveID, "", "6158670d58f68460fc6246b1821c072d527bb282", gDownloadFilePath);
+
+    char* data = "123";
+    hTransferProgress progress = hTransferProgress_New(&ProgressCallback, data);
+    hFileDownloadRequest_setTransferProgress(fileDownloadReq, progress);
+
+    hProgressControl control = hProgressControl_New(&ProgressControl, data);
+    hFileDownloadRequest_setProgressControl(fileDownloadReq, control);
+
+    hDataGetOutcome fileDownloadOutcome = hPdsClient_ResumableFileDownload(client, fileDownloadReq);
+    if (hDataGetOutcome_isSuccess(fileDownloadOutcome) == false) {
+        hPdsError err = hDataGetOutcome_error(fileDownloadOutcome);
+        hPdsError_print(err);
+
+        // clean
+        hDataGetOutcome_Del(fileDownloadOutcome);
+        return -1;
+    }
+
+    hDataGetResult DataGetResult = hDataGetOutcome_result(fileDownloadOutcome);
+    hDataGetResult_print(DataGetResult);
+
+    hDataGetOutcome_Del(fileDownloadOutcome);
+
+    return 0;
+}
+
 int main()
 {
     Pds_InitializeSdk();
-    Pds_SetLogLevel(LogInfo);
+    Pds_SetLogLevel(LogAll);
 
     hClientConfiguration conf = hClientConfiguration_New();
     hClientConfiguration_SetEnableRapidUpload(conf, false);
-    hPdsClient client = hPdsClient_New(gEndpoint, gAccessToken, conf);
+    hCredentials credentials = hCredentials_New("");
+    hCredentials_setAccessToken(credentials, gAccessToken);
+    hPdsClient client = hPdsClient_New_3(gEndpoint, credentials, conf);
 
-    int ret = testResumableFileUpload(client);
+    int ret = testResumableFileDownload(client);
 
     hPdsClient_Del(client);
+
     hClientConfiguration_Del(conf);
+    hCredentials_Del(credentials);
     Pds_ShutdownSdk();
 
     if (ret == 0) {

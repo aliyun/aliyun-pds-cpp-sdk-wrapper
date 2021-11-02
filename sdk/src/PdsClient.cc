@@ -46,10 +46,23 @@ void Pds_SetLogLevel(LogLevel level)
 }
 
 // ========== C-interface for PdsClient
-hPdsClient hPdsClient_New(char* endpoint, char* accessToken, hClientConfiguration conf)
+hPdsClient hPdsClient_New_1(char* endpoint, hClientConfiguration conf)
+{
+    auto p = reinterpret_cast<AlibabaCloud::PDS::ClientConfiguration*>(conf);
+    return new (std::nothrow) AlibabaCloud::PDS::PdsClient(endpoint, *p);
+}
+
+hPdsClient hPdsClient_New_2(char* endpoint, char* accessToken, hClientConfiguration conf)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::ClientConfiguration*>(conf);
     return new (std::nothrow) AlibabaCloud::PDS::PdsClient(endpoint, accessToken, *p);
+}
+
+hPdsClient hPdsClient_New_3(char* endpoint, hCredentials credentials, hClientConfiguration conf)
+{
+    auto p = reinterpret_cast<AlibabaCloud::PDS::ClientConfiguration*>(conf);
+    auto cred = reinterpret_cast<AlibabaCloud::PDS::Credentials*>(credentials);
+    return new (std::nothrow) AlibabaCloud::PDS::PdsClient(endpoint, *cred, *p);
 }
 
 void hPdsClient_Del(hPdsClient self)
@@ -209,4 +222,11 @@ hFileCompleteOutcome hPdsClient_ResumableFileUpload(hPdsClient self, hFileUpload
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::FileUploadRequest*>(request);
     return new (std::nothrow) AlibabaCloud::PDS::FileCompleteOutcome(std::move(p->ResumableFileUpload(*req)));
+}
+
+hDataGetOutcome hPdsClient_ResumableFileDownload(hPdsClient self, hFileDownloadRequest request)
+{
+    auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
+    auto req = reinterpret_cast<AlibabaCloud::PDS::FileDownloadRequest*>(request);
+    return new (std::nothrow) AlibabaCloud::PDS::DataGetOutcome(std::move(p->ResumableFileDownload(*req)));
 }

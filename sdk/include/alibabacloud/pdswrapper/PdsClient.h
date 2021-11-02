@@ -54,6 +54,9 @@
 #include <alibabacloud/pdswrapper/MetaUserTagsDeleteRequest.h>
 #include <alibabacloud/pdswrapper/PdsOutcome.h>
 #include <alibabacloud/pdswrapper/FileUploadRequest.h>
+#include <alibabacloud/pdswrapper/DataGetOutcome.h>
+#include <alibabacloud/pdswrapper/FileDownloadRequest.h>
+#include <alibabacloud/pdswrapper/Credentials.h>
 
 
 // ========== C-interface for initialize
@@ -79,7 +82,12 @@ EXPORT_C void Pds_SetLogLevel(enum LogLevel level);
 // ========== C-interface for PdsClient
 typedef void* hPdsClient;
 
-EXPORT_C hPdsClient hPdsClient_New(char* endpoint, char* accessToken, hClientConfiguration conf);
+// ========== C-interface for PdsClient
+typedef void* hPdsClient;
+
+EXPORT_C hPdsClient hPdsClient_New_1(char* endpoint, hClientConfiguration conf);
+EXPORT_C hPdsClient hPdsClient_New_2(char* endpoint, char* accessToken, hClientConfiguration conf);
+EXPORT_C hPdsClient hPdsClient_New_3(char* endpoint, hCredentials credentials, hClientConfiguration conf);
 EXPORT_C void hPdsClient_Del(hPdsClient self);
 
 // ========== request control
@@ -111,8 +119,9 @@ EXPORT_C hFileDeleteOutcome hPdsClient_FileDelete(hPdsClient self, hFileDeleteRe
 EXPORT_C hDataPutOutcome hPdsClient_DataPutByUrl(hPdsClient self, char* url, char* data);
 
 // ========== meta
-EXPORT_C hMetaUserTagsPutOutcome hPdsClient_MetaUserTagsPut(hPdsClient self, hMetaUserTagsPutRequest req);
-EXPORT_C hPdsOutcome hPdsClient_MetaUserTagsDelete(hPdsClient self, hMetaUserTagsDeleteRequest req);
+EXPORT_C hMetaUserTagsPutOutcome hPdsClient_MetaUserTagsPut(hPdsClient self, hMetaUserTagsPutRequest request);
+EXPORT_C hPdsOutcome hPdsClient_MetaUserTagsDelete(hPdsClient self, hMetaUserTagsDeleteRequest request);
 
 // ========== Resumable Operation
-EXPORT_C hFileCompleteOutcome hPdsClient_ResumableFileUpload(hPdsClient self, hFileUploadRequest req);
+EXPORT_C hFileCompleteOutcome hPdsClient_ResumableFileUpload(hPdsClient self, hFileUploadRequest request);
+EXPORT_C hDataGetOutcome hPdsClient_ResumableFileDownload(hPdsClient self, hFileDownloadRequest request);

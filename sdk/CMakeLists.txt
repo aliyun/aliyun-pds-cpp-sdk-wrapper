@@ -20,23 +20,23 @@ project(alibabacloud-pds-cpp-sdk-wrapper VERSION 0.1)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
-#common header
+# common header
 file(GLOB sdk_wrapper_header "include/alibabacloud/pdswrapper/*.h")
 
-#all header
+# all header
 file(GLOB sdk_header
     ${sdk_wrapper_header}
 )
 
-#common source
+# common source
 file(GLOB sdk_wrapper_src "src/*.cc")
 
-#all source
+# all source
 file(GLOB sdk_src
     ${sdk_wrapper_src}
 )
 
-#static lib
+# static lib
 add_library(${PROJECT_NAME}${STATIC_LIB_SUFFIX} STATIC
     ${sdk_header}
     ${sdk_src})
@@ -66,7 +66,7 @@ target_include_directories(${PROJECT_NAME}
 target_compile_options(${PROJECT_NAME}${STATIC_LIB_SUFFIX}
     PRIVATE "${SDK_COMPILER_FLAGS}" "${EXTRA_DEFINE}")
 
-#shared lib
+# shared lib
 if (BUILD_SHARED_LIBS)
     add_library(${PROJECT_NAME} SHARED
         ${sdk_header}
@@ -104,7 +104,7 @@ endif()
 
 #target_link_libraries(${PROJECT_NAME} alibabacloud-pds-cpp-sdk)
 
-#install
+# install
 message(STATUS "sdk_wrapper_header: ${sdk_wrapper_header}")
 install(FILES ${sdk_wrapper_header}
     DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/alibabacloud/pdswrapper)

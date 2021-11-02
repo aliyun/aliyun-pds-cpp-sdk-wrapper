@@ -16,11 +16,13 @@
 
 #pragma once
 
-char* gEndpoint = "https://sg1.api.aliyunpds.com";
-char* gAccessToken = "xxxxxx";
+#include <alibabacloud/pdswrapper/common.h>
+#include <alibabacloud/pdswrapper/RequestMetaData.h>
 
-char *gDriveID = "1";
-char *gFileID = "6177d260c370e4ed12804b79a5cc6c449086a123";
 
-char *gUploadFilePath = "/Users/xxxxxx/Desktop/testdata/图片测试.xlsx";
-char *gDownloadFilePath = "/Users/xxxxxx/Desktop/a.data";
+// ========== C-interface for hDataGetResult
+typedef void* hDataGetResult;
+
+EXPORT_C hRequestMetaData hDataGetResult_Metadata(hDataGetResult self);
+
+EXPORT_C void hDataGetResult_print(hDataGetResult self);

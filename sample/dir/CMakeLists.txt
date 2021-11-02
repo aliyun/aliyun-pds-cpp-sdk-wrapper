@@ -4,9 +4,7 @@ project( CallCppFromC)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
-
 file(GLOB sample_dir_src "*.c")
-
 
 include_directories(${PDS_WRAPPER_INCLUDE})
 link_directories(${PDS_WRAPPER_INCLUDE}/../build/lib)

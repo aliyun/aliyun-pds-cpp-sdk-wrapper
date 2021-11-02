@@ -16,11 +16,16 @@
 
 #pragma once
 
-char* gEndpoint = "https://sg1.api.aliyunpds.com";
-char* gAccessToken = "xxxxxx";
+#include <alibabacloud/pdswrapper/common.h>
 
-char *gDriveID = "1";
-char *gFileID = "6177d260c370e4ed12804b79a5cc6c449086a123";
 
-char *gUploadFilePath = "/Users/xxxxxx/Desktop/testdata/图片测试.xlsx";
-char *gDownloadFilePath = "/Users/xxxxxx/Desktop/a.data";
+// ========== C-interface for hCredentials
+typedef void* hCredentials;
+
+EXPORT_C hCredentials hCredentials_New(char* accessToken);
+EXPORT_C void hCredentials_Del(hCredentials self);
+
+EXPORT_C void hCredentials_setAccessToken(hCredentials self, char* token);
+EXPORT_C char* hCredentials_AccessToken(hCredentials self);
+
+EXPORT_C void hCredentials_print(hCredentials);

@@ -18,39 +18,6 @@
 #include <alibabacloud/pds/model/FileUploadRequest.h>
 
 
-using TransferProgressFuncType = void(size_t, int64_t, int64_t, void*);
-using ProgressControlType = int32_t(void*);
-
-
-// ========== C-interface for hTransferProgress
-hTransferProgress hTransferProgress_New(TransferProgressHandler handler, void* userData)
-{
-    auto p = new (std::nothrow) AlibabaCloud::PDS::TransferProgress();
-    p->Handler = reinterpret_cast<TransferProgressFuncType*>(handler);
-    p->UserData = userData;
-    return p;
-}
-
-void hTransferProgress_Del(hTransferProgress self)
-{
-    delete reinterpret_cast<AlibabaCloud::PDS::TransferProgress*>(self);
-}
-
-// ========== C-interface for hProgressControl
-hProgressControl hProgressControl_New(ProgressControlHandler handler, void* userData)
-{
-    auto p = new (std::nothrow) AlibabaCloud::PDS::ProgressControl();
-    p->Handler = reinterpret_cast<ProgressControlType*>(handler);
-    p->UserData = userData;
-    return p;
-}
-
-void hProgressControl_Del(hProgressControl self)
-{
-    delete reinterpret_cast<AlibabaCloud::PDS::ProgressControl*>(self);
-}
-
-
 // ========== C-interface for hFileUploadRequest
 hFileUploadRequest hFileUploadRequest_New_1(char* driveID,
                                                 char* parentFileID,

@@ -18,23 +18,7 @@
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/MetaUserTag.h>
-#include <stdio.h>
-
-
-// ========== C-interface for hTransferProgress
-typedef void(*TransferProgressHandler)(size_t, int64_t, int64_t, void*);
-typedef void* hTransferProgress;
-
-EXPORT_C hTransferProgress hTransferProgress_New(TransferProgressHandler handler, void* userData);
-EXPORT_C void hTransferProgress_Del(hTransferProgress self);
-
-
-// ========== C-interface for hProgressControl
-typedef int32_t(*ProgressControlHandler)(void*);
-typedef void* hProgressControl;
-
-EXPORT_C hProgressControl hProgressControl_New(ProgressControlHandler handler, void* userData);
-EXPORT_C void hProgressControl_Del(hProgressControl self);
+#include <alibabacloud/pdswrapper/TransferControl.h>
 
 
 // ========== C-interface for hFileUploadRequest

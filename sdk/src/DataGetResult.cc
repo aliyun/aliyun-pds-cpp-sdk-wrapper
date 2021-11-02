@@ -14,13 +14,22 @@
  * limitations under the License.
  */
 
-#pragma once
+#include <alibabacloud/pdswrapper/DataGetResult.h>
+#include <alibabacloud/pds/model/DataGetResult.h>
+#include <iostream>
 
-char* gEndpoint = "https://sg1.api.aliyunpds.com";
-char* gAccessToken = "xxxxxx";
 
-char *gDriveID = "1";
-char *gFileID = "6177d260c370e4ed12804b79a5cc6c449086a123";
+hRequestMetaData hDataGetResult_Metadata(hDataGetResult self)
+{
+    auto p = reinterpret_cast<AlibabaCloud::PDS::DataGetResult*>(self);
+    AlibabaCloud::PDS::RequestMetaData& meta = const_cast<AlibabaCloud::PDS::RequestMetaData&>(p->Metadata());
+    return &meta;
+}
 
-char *gUploadFilePath = "/Users/xxxxxx/Desktop/testdata/图片测试.xlsx";
-char *gDownloadFilePath = "/Users/xxxxxx/Desktop/a.data";
+void hDataGetResult_print(hDataGetResult self)
+{
+    std::cout << "hDataGetResult(" \
+        << "Metadata=";
+    hRequestMetaData_print(hDataGetResult_Metadata(self));
+    std::cout << ")" << std::endl;
+}
