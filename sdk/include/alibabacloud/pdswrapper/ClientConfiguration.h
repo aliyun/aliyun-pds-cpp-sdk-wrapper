@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_CLIENT_CONFIGURATION_H_
+#define _PDS_CPP_SDK_WRAPPER_CLIENT_CONFIGURATION_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -50,3 +50,5 @@ EXPORT_C bool hClientConfiguration_GetEnableCrc64(hClientConfiguration self);
 
 EXPORT_C void hClientConfiguration_SetEnableRapidUpload(hClientConfiguration self, bool enableRapidUpload);
 EXPORT_C bool hClientConfiguration_GetEnableRapidUpload(hClientConfiguration self);
+
+#endif

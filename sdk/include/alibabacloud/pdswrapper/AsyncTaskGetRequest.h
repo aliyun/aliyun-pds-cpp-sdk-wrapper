@@ -14,7 +14,8 @@
  * limitations under the License.
  */
 
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_ASYNC_TASK_GET_REQUEST_H_
+#define _PDS_CPP_SDK_WRAPPER_ASYNC_TASK_GET_REQUEST_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -26,3 +27,5 @@ EXPORT_C hAsyncTaskGetRequest hAsyncTaskGetRequest_New(char* asyncTaskId);
 EXPORT_C void hAsyncTaskGetRequest_Del(hAsyncTaskGetRequest self);
 
 EXPORT_C void hAsyncTaskGetRequest_print(hAsyncTaskGetRequest self);
+
+#endif

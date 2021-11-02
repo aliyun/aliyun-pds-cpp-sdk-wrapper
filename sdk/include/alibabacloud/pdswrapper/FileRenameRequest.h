@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_FILE_RENAME_REQUEST_H_
+#define _PDS_CPP_SDK_WRAPPER_FILE_RENAME_REQUEST_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -29,3 +29,5 @@ EXPORT_C hFileRenameRequest hFileRenameRequest_New(char* driveID,
 EXPORT_C void hFileRenameRequest_Del(hFileRenameRequest self);
 
 EXPORT_C void hFileRenameRequest_print(hFileRenameRequest self);
+
+#endif

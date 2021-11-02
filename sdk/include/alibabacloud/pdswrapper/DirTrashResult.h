@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_DIR_TRASH_RESULT_H_
+#define _PDS_CPP_SDK_WRAPPER_DIR_TRASH_RESULT_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -27,3 +27,5 @@ EXPORT_C char* hDirTrashResult_FileID(hDirTrashResult self);
 EXPORT_C char* hDirTrashResult_AsyncTaskID(hDirTrashResult self);
 
 EXPORT_C void hDirTrashResult_print(hDirTrashResult self);
+
+#endif

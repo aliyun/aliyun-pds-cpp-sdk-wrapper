@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_FILE_DELETE_RESULT_H_
+#define _PDS_CPP_SDK_WRAPPER_FILE_DELETE_RESULT_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -23,3 +23,5 @@
 typedef void* hFileDeleteResult;
 
 EXPORT_C void hFileDeleteResult_print(hFileDeleteResult self);
+
+#endif

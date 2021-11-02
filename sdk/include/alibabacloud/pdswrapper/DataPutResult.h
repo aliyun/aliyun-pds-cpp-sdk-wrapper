@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_DATA_PUT_RESULT_H_
+#define _PDS_CPP_SDK_WRAPPER_DATA_PUT_RESULT_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -26,3 +26,5 @@ EXPORT_C char* hDataPutResult_ETag(hDataPutResult self);
 EXPORT_C uint64_t hDataPutResult_CRC64(hDataPutResult self);
 
 EXPORT_C void hDataPutResult_print(hDataPutResult self);
+
+#endif

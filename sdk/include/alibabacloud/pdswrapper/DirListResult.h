@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_DIR_LIST_RESULT_H_
+#define _PDS_CPP_SDK_WRAPPER_DIR_LIST_RESULT_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/FileItem.h>
@@ -27,3 +27,5 @@ EXPORT_C char* hDirListResult_NextMarker(hDirListResult self);
 EXPORT_C hFileItemList hDirListResult_FileItemList(hDirListResult self);
 
 EXPORT_C void hDirListResult_print(hDirListResult self);
+
+#endif

@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_DIR_LIST_REQUEST_H_
+#define _PDS_CPP_SDK_WRAPPER_DIR_LIST_REQUEST_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/MetaUserTag.h>
@@ -39,3 +39,5 @@ EXPORT_C void hDirListRequest_setStarred(hDirListRequest self, bool starred);
 EXPORT_C void hDirListRequest_setAll(hDirListRequest self, bool all);
 
 EXPORT_C void hDirListRequest_print(hDirListRequest self);
+
+#endif

@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_SERVICE_RESULT_H_
+#define _PDS_CPP_SDK_WRAPPER_SERVICE_RESULT_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -25,3 +25,5 @@ typedef void* hServiceResult;
 EXPORT_C char* hServiceResult_RequestID(hServiceResult self);
 
 EXPORT_C void hServiceResult_print(hServiceResult self);
+
+#endif

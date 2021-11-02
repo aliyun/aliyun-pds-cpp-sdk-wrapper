@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_META_USER_TAGS_DELETE_REQUEST_H_
+#define _PDS_CPP_SDK_WRAPPER_META_USER_TAGS_DELETE_REQUEST_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/MetaUserTag.h>
@@ -29,3 +29,5 @@ EXPORT_C hMetaUserTagsDeleteRequest hMetaUserTagsDeleteRequest_New(char* driveID
 EXPORT_C void hMetaUserTagsDeleteRequest_Del(hMetaUserTagsDeleteRequest self);
 
 EXPORT_C void hMetaUserTagsDeleteRequest_print(hMetaUserTagsDeleteRequest self);
+
+#endif

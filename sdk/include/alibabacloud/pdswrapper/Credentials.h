@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_CREDENTIALS_H_
+#define _PDS_CPP_SDK_WRAPPER_CREDENTIALS_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -29,3 +29,5 @@ EXPORT_C void hCredentials_setAccessToken(hCredentials self, char* token);
 EXPORT_C char* hCredentials_AccessToken(hCredentials self);
 
 EXPORT_C void hCredentials_print(hCredentials);
+
+#endif

@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_FILE_GET_DOWNLOAD_URL_REQUEST_H_
+#define _PDS_CPP_SDK_WRAPPER_FILE_GET_DOWNLOAD_URL_REQUEST_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -31,3 +31,5 @@ EXPORT_C void hFileGetDownloadUrlRequest_setUrlExpireSec(hFileGetDownloadUrlRequ
 EXPORT_C void hFileGetDownloadUrlRequest_setShareToken(hFileGetDownloadUrlRequest self, char* shareToken);
 
 EXPORT_C void hFileGetDownloadUrlRequest_print(hFileGetDownloadUrlRequest self);
+
+#endif

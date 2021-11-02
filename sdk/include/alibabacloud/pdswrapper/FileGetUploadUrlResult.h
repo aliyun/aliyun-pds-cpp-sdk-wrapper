@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_FILE_GET_UPLOAD_URL_RESULT_H_
+#define _PDS_CPP_SDK_WRAPPER_FILE_GET_UPLOAD_URL_RESULT_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/PartInfoResp.h>
@@ -29,3 +29,5 @@ EXPORT_C char* hFileGetUploadUrlResult_UploadID(hFileGetUploadUrlResult self);
 EXPORT_C hPartInfoRespList hFileGetUploadUrlResult_PartInfoRespList(hFileGetUploadUrlResult self);
 
 EXPORT_C void hFileGetUploadUrlResult_print(hFileGetUploadUrlResult self);
+
+#endif

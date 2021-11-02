@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_ASYNC_TASK_GET_OUTCOME_H_
+#define _PDS_CPP_SDK_WRAPPER_ASYNC_TASK_GET_OUTCOME_H_
+
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/PdsError.h>
@@ -30,3 +32,5 @@ EXPORT_C void hAsyncTaskGetOutcome_Del(hAsyncTaskGetOutcome self);
 EXPORT_C bool hAsyncTaskGetOutcome_isSuccess(hAsyncTaskGetOutcome self);
 EXPORT_C hPdsError hAsyncTaskGetOutcome_error(hAsyncTaskGetOutcome self);
 EXPORT_C hAsyncTaskGetResult hAsyncTaskGetOutcome_result(hAsyncTaskGetOutcome self);
+
+#endif

@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_PDS_CLIENT_H_
+#define _PDS_CPP_SDK_WRAPPER_PDS_CLIENT_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/ClientConfiguration.h>
@@ -125,3 +125,5 @@ EXPORT_C hPdsOutcome hPdsClient_MetaUserTagsDelete(hPdsClient self, hMetaUserTag
 // ========== Resumable Operation
 EXPORT_C hFileCompleteOutcome hPdsClient_ResumableFileUpload(hPdsClient self, hFileUploadRequest request);
 EXPORT_C hDataGetOutcome hPdsClient_ResumableFileDownload(hPdsClient self, hFileDownloadRequest request);
+
+#endif

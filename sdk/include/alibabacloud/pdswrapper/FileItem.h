@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_FILE_ITEM_H_
+#define _PDS_CPP_SDK_WRAPPER_FILE_ITEM_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/MetaUserTag.h>
@@ -63,3 +63,5 @@ EXPORT_C int hFileItemList_size(hFileItemList self);
 EXPORT_C hFileItem hFileItemList_at(hFileItemList self, int i);
 
 EXPORT_C void hFileItemList_print(hFileItemList self);
+
+#endif

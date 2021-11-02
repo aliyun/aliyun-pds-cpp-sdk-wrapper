@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_FILE_LIST_UPLOADED_PARTS_RESULT_H_
+#define _PDS_CPP_SDK_WRAPPER_FILE_LIST_UPLOADED_PARTS_RESULT_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/Part.h>
@@ -29,3 +29,5 @@ EXPORT_C char* hFileListUploadedPartsResult_NextMarker(hFileListUploadedPartsRes
 EXPORT_C hPartList hFileListUploadedPartsResult_PartList(hFileListUploadedPartsResult self);
 
 EXPORT_C void hFileListUploadedPartsResult_print(hFileListUploadedPartsResult self);
+
+#endif

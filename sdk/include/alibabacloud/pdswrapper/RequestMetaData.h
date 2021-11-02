@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_REQUEST_META_DATA_H_
+#define _PDS_CPP_SDK_WRAPPER_REQUEST_META_DATA_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -33,3 +33,5 @@ EXPORT_C char* hRequestMetaData_ETag(hRequestMetaData self);
 EXPORT_C char* hRequestMetaData_VersionId(hRequestMetaData self);
 
 EXPORT_C void hRequestMetaData_print(hRequestMetaData self);
+
+#endif

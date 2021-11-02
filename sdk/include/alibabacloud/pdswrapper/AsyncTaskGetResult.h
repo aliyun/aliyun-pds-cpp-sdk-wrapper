@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_ASYNC_TASK_GET_RESULT_H_
+#define _PDS_CPP_SDK_WRAPPER_ASYNC_TASK_GET_RESULT_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -31,3 +31,5 @@ EXPORT_C int64_t hAsyncTaskGetResult_ErrCode(hAsyncTaskGetResult self);
 EXPORT_C char* hAsyncTaskGetResult_Url(hAsyncTaskGetResult self);
 
 EXPORT_C void hAsyncTaskGetResult_print(hAsyncTaskGetResult self);
+
+#endif

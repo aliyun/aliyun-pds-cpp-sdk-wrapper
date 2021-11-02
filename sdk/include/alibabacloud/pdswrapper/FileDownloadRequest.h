@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_FILE_DOWNLOAD_REQUEST_H_
+#define _PDS_CPP_SDK_WRAPPER_FILE_DOWNLOAD_REQUEST_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/MetaUserTag.h>
@@ -55,3 +55,5 @@ EXPORT_C void hFileDownloadRequest_setTransferProgress(hFileDownloadRequest self
 EXPORT_C void hFileDownloadRequest_setProgressControl(hFileDownloadRequest self, hProgressControl control);
 
 EXPORT_C void hFileDownloadRequest_print(hFileDownloadRequest self);
+
+#endif

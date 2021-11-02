@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_TRANSFER_CONTROL_H_
+#define _PDS_CPP_SDK_WRAPPER_TRANSFER_CONTROL_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <stdio.h>
@@ -34,3 +34,5 @@ typedef void* hProgressControl;
 
 EXPORT_C hProgressControl hProgressControl_New(ProgressControlHandler handler, void* userData);
 EXPORT_C void hProgressControl_Del(hProgressControl self);
+
+#endif

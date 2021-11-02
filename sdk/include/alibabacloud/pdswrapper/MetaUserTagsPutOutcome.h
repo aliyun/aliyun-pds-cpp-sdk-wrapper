@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_META_USER_TAGS_PUT_OUTCOME_H_
+#define _PDS_CPP_SDK_WRAPPER_META_USER_TAGS_PUT_OUTCOME_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/PdsError.h>
@@ -30,3 +30,5 @@ EXPORT_C void hMetaUserTagsPutOutcome_Del(hMetaUserTagsPutOutcome self);
 EXPORT_C bool hMetaUserTagsPutOutcome_isSuccess(hMetaUserTagsPutOutcome self);
 EXPORT_C hPdsError hMetaUserTagsPutOutcome_error(hMetaUserTagsPutOutcome self);
 EXPORT_C hMetaUserTagsPutResult hMetaUserTagsPutOutcome_result(hMetaUserTagsPutOutcome self);
+
+#endif

@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_PDS_ERROR_H_
+#define _PDS_CPP_SDK_WRAPPER_PDS_ERROR_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/ClientConfiguration.h>
@@ -39,3 +39,5 @@ EXPORT_C void hPdsError_setHost(hPdsError self, char* host);
 EXPORT_C char* hPdsError_Host(hPdsError self);
 
 EXPORT_C void hPdsError_print(hPdsError);
+
+#endif

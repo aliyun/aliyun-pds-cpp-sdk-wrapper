@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_FILE_DELETE_REQUEST_H_
+#define _PDS_CPP_SDK_WRAPPER_FILE_DELETE_REQUEST_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/ClientConfiguration.h>
@@ -29,3 +29,5 @@ EXPORT_C hFileDeleteRequest hFileDeleteRequest_New(char* driveID,
 EXPORT_C void hFileDeleteRequest_Del(hFileDeleteRequest self);
 
 EXPORT_C void hFileDeleteRequest_print(hFileDeleteRequest self);
+
+#endif

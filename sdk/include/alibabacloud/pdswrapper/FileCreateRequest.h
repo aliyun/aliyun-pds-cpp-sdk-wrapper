@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_FILE_CREATE_REQUEST_H_
+#define _PDS_CPP_SDK_WRAPPER_FILE_CREATE_REQUEST_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/PartInfoReq.h>
@@ -38,3 +38,5 @@ EXPORT_C void hFileCreateRequest_setPreHash(hFileCreateRequest self, char* preHa
 EXPORT_C void hFileCreateRequest_setContentHash(hFileCreateRequest self, char* contentHash);
 
 EXPORT_C void hFileCreateRequest_print(hFileCreateRequest self);
+
+#endif

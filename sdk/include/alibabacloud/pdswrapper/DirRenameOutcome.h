@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_DIR_RENAME_OUTCOME_H_
+#define _PDS_CPP_SDK_WRAPPER_DIR_RENAME_OUTCOME_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/PdsError.h>
@@ -31,3 +31,5 @@ EXPORT_C void hDirRenameOutcome_Del(hDirRenameOutcome self);
 EXPORT_C bool hDirRenameOutcome_isSuccess(hDirRenameOutcome self);
 EXPORT_C hPdsError hDirRenameOutcome_error(hDirRenameOutcome self);
 EXPORT_C hDirRenameResult hDirRenameOutcome_result(hDirRenameOutcome self);
+
+#endif

@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_FILE_GET_DOWNLOAD_URL_OUTCOME_H_
+#define _PDS_CPP_SDK_WRAPPER_FILE_GET_DOWNLOAD_URL_OUTCOME_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/PdsError.h>
@@ -30,3 +30,5 @@ EXPORT_C void hFileGetDownloadUrlOutcome_Del(hFileGetDownloadUrlOutcome self);
 EXPORT_C bool hFileGetDownloadUrlOutcome_isSuccess(hFileGetDownloadUrlOutcome self);
 EXPORT_C hPdsError hFileGetDownloadUrlOutcome_error(hFileGetDownloadUrlOutcome self);
 EXPORT_C hFileGetDownloadUrlResult hFileGetDownloadUrlOutcome_result(hFileGetDownloadUrlOutcome self);
+
+#endif

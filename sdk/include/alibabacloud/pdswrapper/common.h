@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_COMMON_H_
+#define _PDS_CPP_SDK_WRAPPER_COMMON_H_
 
 #ifdef __cplusplus
   #define EXPORT_C extern "C"
@@ -24,3 +24,5 @@
 
 #include <stdbool.h>
 #include <stdint.h>
+
+#endif

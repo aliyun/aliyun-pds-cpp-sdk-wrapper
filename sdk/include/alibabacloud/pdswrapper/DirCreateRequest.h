@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_DIR_CREATE_REQUEST_H_
+#define _PDS_CPP_SDK_WRAPPER_DIR_CREATE_REQUEST_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/ClientConfiguration.h>
@@ -33,3 +33,5 @@ EXPORT_C void hDirCreateRequest_Del(hDirCreateRequest self);
 EXPORT_C void hDirCreateRequest_setUserTags(hDirCreateRequest self, hUserTagList userTags);
 
 EXPORT_C void hDirCreateRequest_print(hDirCreateRequest self);
+
+#endif

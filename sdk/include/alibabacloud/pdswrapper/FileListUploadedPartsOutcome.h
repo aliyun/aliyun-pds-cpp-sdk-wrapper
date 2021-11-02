@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_FILE_LIST_UPLOADED_PARTS_OUTCOME_H_
+#define _PDS_CPP_SDK_WRAPPER_FILE_LIST_UPLOADED_PARTS_OUTCOME_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/PdsError.h>
@@ -30,3 +30,5 @@ EXPORT_C void hFileListUploadedPartsOutcome_Del(hFileListUploadedPartsOutcome se
 EXPORT_C bool hFileListUploadedPartsOutcome_isSuccess(hFileListUploadedPartsOutcome self);
 EXPORT_C hPdsError hFileListUploadedPartsOutcome_error(hFileListUploadedPartsOutcome self);
 EXPORT_C hFileListUploadedPartsResult hFileListUploadedPartsOutcome_result(hFileListUploadedPartsOutcome self);
+
+#endif

@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_DIR_LIST_OUTCOME_H_
+#define _PDS_CPP_SDK_WRAPPER_DIR_LIST_OUTCOME_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/PdsError.h>
@@ -31,3 +31,5 @@ EXPORT_C void hDirListOutcome_Del(hDirListOutcome self);
 EXPORT_C bool hDirListOutcome_isSuccess(hDirListOutcome self);
 EXPORT_C hPdsError hDirListOutcome_error(hDirListOutcome self);
 EXPORT_C hDirListResult hDirListOutcome_result(hDirListOutcome self);
+
+#endif

@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_FILE_RENAME_RESULT_H_
+#define _PDS_CPP_SDK_WRAPPER_FILE_RENAME_RESULT_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -31,3 +31,5 @@ EXPORT_C char* hFileRenameResult_CreatedAt(hFileRenameResult self);
 EXPORT_C char* hFileRenameResult_UpdatedAt(hFileRenameResult self);
 
 EXPORT_C void hFileRenameResult_print(hFileRenameResult self);
+
+#endif

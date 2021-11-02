@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_PART_INFO_RESP_H_
+#define _PDS_CPP_SDK_WRAPPER_PART_INFO_RESP_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/MetaUserTag.h>
@@ -42,3 +42,5 @@ EXPORT_C void hPartInfoRespList_add(hPartInfoRespList self, char* key, char* val
 EXPORT_C int hPartInfoRespList_size(hPartInfoRespList self);
 EXPORT_C hPartInfoResp hPartInfoRespList_at(hPartInfoRespList self, int i);
 EXPORT_C void hPartInfoRespList_print(hPartInfoRespList self);
+
+#endif

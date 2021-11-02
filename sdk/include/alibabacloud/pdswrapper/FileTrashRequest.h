@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_FILE_TRASH_REQUEST_H_
+#define _PDS_CPP_SDK_WRAPPER_FILE_TRASH_REQUEST_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -27,3 +27,5 @@ EXPORT_C hFileTrashRequest hFileTrashRequest_New(char* driveID,
 EXPORT_C void hFileTrashRequest_Del(hFileTrashRequest self);
 
 EXPORT_C void hFileTrashRequest_print(hFileTrashRequest self);
+
+#endif

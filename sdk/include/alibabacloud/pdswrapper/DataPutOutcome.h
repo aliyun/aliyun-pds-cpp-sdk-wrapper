@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_DATA_PUT_OUTCOME_H_
+#define _PDS_CPP_SDK_WRAPPER_DATA_PUT_OUTCOME_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 #include <alibabacloud/pdswrapper/PdsError.h>
@@ -30,3 +30,5 @@ EXPORT_C void hDataPutOutcome_Del(hDataPutOutcome self);
 EXPORT_C bool hDataPutOutcome_isSuccess(hDataPutOutcome self);
 EXPORT_C hPdsError hDataPutOutcome_error(hDataPutOutcome self);
 EXPORT_C hDataPutResult hDataPutOutcome_result(hDataPutOutcome self);
+
+#endif

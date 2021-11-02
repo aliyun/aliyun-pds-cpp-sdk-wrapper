@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_FILE_GET_DOWNLOAD_URL_RESULT_H_
+#define _PDS_CPP_SDK_WRAPPER_FILE_GET_DOWNLOAD_URL_RESULT_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -33,3 +33,5 @@ EXPORT_C char* hFileGetDownloadUrlResult_InternalUrl(hFileGetDownloadUrlResult s
 EXPORT_C char* hFileGetDownloadUrlResult_Method(hFileGetDownloadUrlResult self);
 EXPORT_C int64_t hFileGetDownloadUrlResult_Size(hFileGetDownloadUrlResult self);
 EXPORT_C char* hFileGetDownloadUrlResult_Url(hFileGetDownloadUrlResult self);
+
+#endif

@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_DIR_DELETE_REQUEST_H_
+#define _PDS_CPP_SDK_WRAPPER_DIR_DELETE_REQUEST_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -26,3 +26,5 @@ EXPORT_C hDirDeleteRequest hDirDeleteRequest_New(char* driveID, char* fileID);
 EXPORT_C void hDirDeleteRequest_Del(hDirDeleteRequest self);
 
 EXPORT_C void hDirDeleteRequest_print(hDirDeleteRequest self);
+
+#endif

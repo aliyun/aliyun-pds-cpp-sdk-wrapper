@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-#pragma once
+#ifndef _PDS_CPP_SDK_WRAPPER_PART_H_
+#define _PDS_CPP_SDK_WRAPPER_PART_H_
 
 #include <alibabacloud/pdswrapper/common.h>
 
@@ -42,3 +42,5 @@ EXPORT_C void hPartList_add(hPartList self, hPart partInfo);
 EXPORT_C int hPartList_size(hPartList self);
 EXPORT_C hPart hPartList_at(hPartList self, int i);
 EXPORT_C void hPartList_print(hPartList self);
+
+#endif
