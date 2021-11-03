@@ -22,9 +22,9 @@
 // ========== C-interface for hDirDeleteRequest
 typedef void* hDirDeleteRequest;
 
-EXPORT_C hDirDeleteRequest hDirDeleteRequest_New(char* driveID, char* fileID);
-EXPORT_C void hDirDeleteRequest_Del(hDirDeleteRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDirDeleteRequest hDirDeleteRequest_New(char* driveID, char* fileID);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirDeleteRequest_Del(hDirDeleteRequest self);
 
-EXPORT_C void hDirDeleteRequest_print(hDirDeleteRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirDeleteRequest_print(hDirDeleteRequest self);
 
 #endif

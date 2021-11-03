@@ -22,6 +22,6 @@
 // ========== C-interface for hFileTrashResult
 typedef void* hFileTrashResult;
 
-EXPORT_C void hFileTrashResult_print(hFileTrashResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileTrashResult_print(hFileTrashResult self);
 
 #endif

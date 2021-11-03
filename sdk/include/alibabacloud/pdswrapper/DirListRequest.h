@@ -23,21 +23,21 @@
 // ========== C-interface for hDirListRequest
 typedef void* hDirListRequest;
 
-EXPORT_C hDirListRequest hDirListRequest_New(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDirListRequest hDirListRequest_New(char* driveID,
                                             char* parentFileID,
                                             char* orderBy,
                                             char* orderDirection,
                                             char* fields,
                                             char* marker,
                                             int limit);
-EXPORT_C void hDirListRequest_Del(hDirListRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirListRequest_Del(hDirListRequest self);
 
-EXPORT_C void hDirListRequest_setType(hDirListRequest self, char* type);
-EXPORT_C void hDirListRequest_setCategory(hDirListRequest self, char* category);
-EXPORT_C void hDirListRequest_setUrlExpireSec(hDirListRequest self, int urlExpireSec);
-EXPORT_C void hDirListRequest_setStarred(hDirListRequest self, bool starred);
-EXPORT_C void hDirListRequest_setAll(hDirListRequest self, bool all);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirListRequest_setType(hDirListRequest self, char* type);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirListRequest_setCategory(hDirListRequest self, char* category);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirListRequest_setUrlExpireSec(hDirListRequest self, int urlExpireSec);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirListRequest_setStarred(hDirListRequest self, bool starred);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirListRequest_setAll(hDirListRequest self, bool all);
 
-EXPORT_C void hDirListRequest_print(hDirListRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirListRequest_print(hDirListRequest self);
 
 #endif

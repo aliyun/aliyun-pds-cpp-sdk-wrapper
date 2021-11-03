@@ -23,9 +23,9 @@
 // ========== C-interface for hAsyncTaskGetRequest
 typedef void* hAsyncTaskGetRequest;
 
-EXPORT_C hAsyncTaskGetRequest hAsyncTaskGetRequest_New(char* asyncTaskId);
-EXPORT_C void hAsyncTaskGetRequest_Del(hAsyncTaskGetRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hAsyncTaskGetRequest hAsyncTaskGetRequest_New(char* asyncTaskId);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hAsyncTaskGetRequest_Del(hAsyncTaskGetRequest self);
 
-EXPORT_C void hAsyncTaskGetRequest_print(hAsyncTaskGetRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hAsyncTaskGetRequest_print(hAsyncTaskGetRequest self);
 
 #endif

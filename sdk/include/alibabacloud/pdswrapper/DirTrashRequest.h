@@ -22,9 +22,9 @@
 // ========== C-interface for hDirTrashRequest
 typedef void* hDirTrashRequest;
 
-EXPORT_C hDirTrashRequest hDirTrashRequest_New(char* driveID, char* fileID);
-EXPORT_C void hDirTrashRequest_Del(hDirTrashRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDirTrashRequest hDirTrashRequest_New(char* driveID, char* fileID);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirTrashRequest_Del(hDirTrashRequest self);
 
-EXPORT_C void hDirTrashRequest_print(hDirTrashRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirTrashRequest_print(hDirTrashRequest self);
 
 #endif

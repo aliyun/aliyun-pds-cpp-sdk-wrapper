@@ -27,5 +27,7 @@ EXPORT_C char* hMetaUserTagsPutResult_FileID(hMetaUserTagsPutResult self)
 
 void hMetaUserTagsPutResult_print(hMetaUserTagsPutResult self)
 {
-    std::cout << "hMetaUserTagsPutResult()" << std::endl;
+    std::cout << "hMetaUserTagsPutResult("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

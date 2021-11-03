@@ -22,16 +22,16 @@
 // ========== C-interface for hFileGetDownloadUrlResult
 typedef void* hFileGetDownloadUrlResult;
 
-EXPORT_C void hFileGetDownloadUrlResult_print(hFileGetDownloadUrlResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileGetDownloadUrlResult_print(hFileGetDownloadUrlResult self);
 
-EXPORT_C char* hFileGetDownloadUrlResult_ContentHash(hFileGetDownloadUrlResult self);
-EXPORT_C char* hFileGetDownloadUrlResult_ContentHashName(hFileGetDownloadUrlResult self);
-EXPORT_C char* hFileGetDownloadUrlResult_Crc64Hash(hFileGetDownloadUrlResult self);
-EXPORT_C char* hFileGetDownloadUrlResult_CdnUrl(hFileGetDownloadUrlResult self);
-EXPORT_C char* hFileGetDownloadUrlResult_Expiration(hFileGetDownloadUrlResult self);
-EXPORT_C char* hFileGetDownloadUrlResult_InternalUrl(hFileGetDownloadUrlResult self);
-EXPORT_C char* hFileGetDownloadUrlResult_Method(hFileGetDownloadUrlResult self);
-EXPORT_C int64_t hFileGetDownloadUrlResult_Size(hFileGetDownloadUrlResult self);
-EXPORT_C char* hFileGetDownloadUrlResult_Url(hFileGetDownloadUrlResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetDownloadUrlResult_ContentHash(hFileGetDownloadUrlResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetDownloadUrlResult_ContentHashName(hFileGetDownloadUrlResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetDownloadUrlResult_Crc64Hash(hFileGetDownloadUrlResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetDownloadUrlResult_CdnUrl(hFileGetDownloadUrlResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetDownloadUrlResult_Expiration(hFileGetDownloadUrlResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetDownloadUrlResult_InternalUrl(hFileGetDownloadUrlResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetDownloadUrlResult_Method(hFileGetDownloadUrlResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hFileGetDownloadUrlResult_Size(hFileGetDownloadUrlResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetDownloadUrlResult_Url(hFileGetDownloadUrlResult self);
 
 #endif

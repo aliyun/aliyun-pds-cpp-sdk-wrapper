@@ -33,5 +33,7 @@ void hMetaUserTagsPutRequest_Del(hMetaUserTagsPutRequest self)
 
 void hMetaUserTagsPutRequest_print(hMetaUserTagsPutRequest self)
 {
-    std::cout << "hMetaUserTagsPutRequest(" << ")" << std::endl;
+    std::cout << "hMetaUserTagsPutRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

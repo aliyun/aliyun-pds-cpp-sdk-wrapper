@@ -36,5 +36,7 @@ void hMetaUserTagsDeleteRequest_Del(hMetaUserTagsDeleteRequest self)
 
 void hMetaUserTagsDeleteRequest_print(hMetaUserTagsDeleteRequest self)
 {
-    std::cout << "hMetaUserTagsDeleteRequest(" << ")" << std::endl;
+    std::cout << "hMetaUserTagsDeleteRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

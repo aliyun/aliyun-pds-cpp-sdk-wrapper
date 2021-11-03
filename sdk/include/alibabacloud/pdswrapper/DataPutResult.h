@@ -22,9 +22,9 @@
 // ========== C-interface for hDataPutResult
 typedef void* hDataPutResult;
 
-EXPORT_C char* hDataPutResult_ETag(hDataPutResult self);
-EXPORT_C uint64_t hDataPutResult_CRC64(hDataPutResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDataPutResult_ETag(hDataPutResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT uint64_t hDataPutResult_CRC64(hDataPutResult self);
 
-EXPORT_C void hDataPutResult_print(hDataPutResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDataPutResult_print(hDataPutResult self);
 
 #endif

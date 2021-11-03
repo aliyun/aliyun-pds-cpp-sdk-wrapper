@@ -22,12 +22,12 @@
 // ========== C-interface for hFileRenameRequest
 typedef void* hFileRenameRequest;
 
-EXPORT_C hFileRenameRequest hFileRenameRequest_New(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileRenameRequest hFileRenameRequest_New(char* driveID,
                                                 char* fileID,
                                                 char* name,
                                                 char* checkNameMode);
-EXPORT_C void hFileRenameRequest_Del(hFileRenameRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileRenameRequest_Del(hFileRenameRequest self);
 
-EXPORT_C void hFileRenameRequest_print(hFileRenameRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileRenameRequest_print(hFileRenameRequest self);
 
 #endif

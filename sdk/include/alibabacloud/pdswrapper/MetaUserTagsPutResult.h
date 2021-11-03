@@ -22,8 +22,8 @@
 // ========== C-interface for hMetaUserTagsPutResult
 typedef void* hMetaUserTagsPutResult;
 
-EXPORT_C char* hMetaUserTagsPutResult_FileID(hMetaUserTagsPutResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hMetaUserTagsPutResult_FileID(hMetaUserTagsPutResult self);
 
-EXPORT_C void hMetaUserTagsPutResult_print(hMetaUserTagsPutResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hMetaUserTagsPutResult_print(hMetaUserTagsPutResult self);
 
 #endif

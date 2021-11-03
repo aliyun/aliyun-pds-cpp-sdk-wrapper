@@ -31,5 +31,7 @@ void hAsyncTaskGetRequest_Del(hAsyncTaskGetRequest self)
 
 void hAsyncTaskGetRequest_print(hAsyncTaskGetRequest self)
 {
-    std::cout << "hAsyncTaskGetRequest(" << ")" << std::endl;
+    std::cout << "hAsyncTaskGetRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

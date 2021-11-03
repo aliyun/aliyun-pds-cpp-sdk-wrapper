@@ -24,14 +24,14 @@
 // ========== C-interface for hDirCreateRequest
 typedef void* hDirCreateRequest;
 
-EXPORT_C hDirCreateRequest hDirCreateRequest_New(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDirCreateRequest hDirCreateRequest_New(char* driveID,
                                                 char* parentFileID,
                                                 char* name,
                                                 char* checkNameMode);
-EXPORT_C void hDirCreateRequest_Del(hDirCreateRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirCreateRequest_Del(hDirCreateRequest self);
 
-EXPORT_C void hDirCreateRequest_setUserTags(hDirCreateRequest self, hUserTagList userTags);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirCreateRequest_setUserTags(hDirCreateRequest self, hUserTagList userTags);
 
-EXPORT_C void hDirCreateRequest_print(hDirCreateRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirCreateRequest_print(hDirCreateRequest self);
 
 #endif

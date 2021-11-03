@@ -25,11 +25,11 @@
 // ========== C-interface for hDirCreateOutcome
 typedef void* hDirCreateOutcome;
 
-EXPORT_C hDirCreateOutcome hDirCreateOutcome_New();
-EXPORT_C void hDirCreateOutcome_Del(hDirCreateOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDirCreateOutcome hDirCreateOutcome_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirCreateOutcome_Del(hDirCreateOutcome self);
 
-EXPORT_C bool hDirCreateOutcome_isSuccess(hDirCreateOutcome self);
-EXPORT_C hPdsError hDirCreateOutcome_error(hDirCreateOutcome self);
-EXPORT_C hDirCreateResult hDirCreateOutcome_result(hDirCreateOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hDirCreateOutcome_isSuccess(hDirCreateOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPdsError hDirCreateOutcome_error(hDirCreateOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDirCreateResult hDirCreateOutcome_result(hDirCreateOutcome self);
 
 #endif

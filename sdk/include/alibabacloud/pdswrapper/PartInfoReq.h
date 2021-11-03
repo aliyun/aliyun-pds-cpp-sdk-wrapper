@@ -22,25 +22,25 @@
 // ========== C-interface for hPartInfoReq
 typedef void* hPartInfoReq;
 
-EXPORT_C hPartInfoReq hPartInfoReq_New(int64_t partNumber, int64_t partSize, int64_t from, int64_t to);
-EXPORT_C void hPartInfoReq_Del(hPartInfoReq self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPartInfoReq hPartInfoReq_New(int64_t partNumber, int64_t partSize, int64_t from, int64_t to);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoReq_Del(hPartInfoReq self);
 
-EXPORT_C int64_t hPartInfoReq_PartNumber(hPartInfoReq self);
-EXPORT_C int64_t hPartInfoReq_PartSize(hPartInfoReq self);
-EXPORT_C int64_t hPartInfoReq_From(hPartInfoReq self);
-EXPORT_C int64_t hPartInfoReq_To(hPartInfoReq self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hPartInfoReq_PartNumber(hPartInfoReq self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hPartInfoReq_PartSize(hPartInfoReq self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hPartInfoReq_From(hPartInfoReq self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hPartInfoReq_To(hPartInfoReq self);
 
-EXPORT_C void hPartInfoReq_print(hPartInfoReq self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoReq_print(hPartInfoReq self);
 
 // ========== C-interface for hPartInfoReqList
 typedef void* hPartInfoReqList;
 
-EXPORT_C hPartInfoReqList hPartInfoReqList_New();
-EXPORT_C void hPartInfoReqList_Del(hPartInfoReqList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPartInfoReqList hPartInfoReqList_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoReqList_Del(hPartInfoReqList self);
 
-EXPORT_C void hPartInfoReqList_add(hPartInfoReqList self, hPartInfoReq partInfo);
-EXPORT_C int hPartInfoReqList_size(hPartInfoReqList self);
-EXPORT_C hPartInfoReq hPartInfoReqList_at(hPartInfoReqList self, int i);
-EXPORT_C void hPartInfoReqList_print(hPartInfoReqList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoReqList_add(hPartInfoReqList self, hPartInfoReq partInfo);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int hPartInfoReqList_size(hPartInfoReqList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPartInfoReq hPartInfoReqList_at(hPartInfoReqList self, int i);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoReqList_print(hPartInfoReqList self);
 
 #endif

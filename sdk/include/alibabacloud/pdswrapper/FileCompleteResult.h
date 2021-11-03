@@ -22,28 +22,28 @@
 // ========== C-interface for hFileCompleteResult
 typedef void* hFileCompleteResult;
 
-EXPORT_C char* hFileCompleteResult_Category(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_ContentHash(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_ContentHashName(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_ContentType(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_Crc64Hash(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_CreatedAt(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_DriveID(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_EncryptMode(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_FileExtension(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_FileID(hFileCompleteResult self);
-EXPORT_C bool hFileCompleteResult_Hidden(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_Location(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_Name(hFileCompleteResult self);
-EXPORT_C bool hFileCompleteResult_RapidUpload(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_ParentFileID(hFileCompleteResult self);
-EXPORT_C int64_t hFileCompleteResult_Size(hFileCompleteResult self);
-EXPORT_C bool hFileCompleteResult_Starred(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_Status(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_Type(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_UpdatedAT(hFileCompleteResult self);
-EXPORT_C char* hFileCompleteResult_UploadID(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_Category(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_ContentHash(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_ContentHashName(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_ContentType(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_Crc64Hash(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_CreatedAt(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_DriveID(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_EncryptMode(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_FileExtension(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_FileID(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hFileCompleteResult_Hidden(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_Location(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_Name(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hFileCompleteResult_RapidUpload(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_ParentFileID(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hFileCompleteResult_Size(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hFileCompleteResult_Starred(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_Status(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_Type(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_UpdatedAT(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCompleteResult_UploadID(hFileCompleteResult self);
 
-EXPORT_C void hFileCompleteResult_print(hFileCompleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileCompleteResult_print(hFileCompleteResult self);
 
 #endif

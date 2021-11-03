@@ -24,11 +24,11 @@
 // ========== C-interface for hDataPutOutcome
 typedef void* hDataPutOutcome;
 
-EXPORT_C hDataPutOutcome hDataPutOutcome_New();
-EXPORT_C void hDataPutOutcome_Del(hDataPutOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDataPutOutcome hDataPutOutcome_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDataPutOutcome_Del(hDataPutOutcome self);
 
-EXPORT_C bool hDataPutOutcome_isSuccess(hDataPutOutcome self);
-EXPORT_C hPdsError hDataPutOutcome_error(hDataPutOutcome self);
-EXPORT_C hDataPutResult hDataPutOutcome_result(hDataPutOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hDataPutOutcome_isSuccess(hDataPutOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPdsError hDataPutOutcome_error(hDataPutOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDataPutResult hDataPutOutcome_result(hDataPutOutcome self);
 
 #endif

@@ -23,24 +23,24 @@
 // ========== C-interface for hPartInfoResp
 typedef void* hPartInfoResp;
 
-EXPORT_C hPartInfoResp hPartInfoResp_New(int64_t partNumber, int64_t partSize, char* uploadUrl);
-EXPORT_C void hPartInfoResp_Del(hPartInfoResp self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPartInfoResp hPartInfoResp_New(int64_t partNumber, int64_t partSize, char* uploadUrl);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoResp_Del(hPartInfoResp self);
 
-EXPORT_C int64_t hPartInfoResp_PartNumber(hPartInfoResp self);
-EXPORT_C int64_t hPartInfoResp_PartSize(hPartInfoResp self);
-EXPORT_C char* hPartInfoResp_UploadUrl(hPartInfoResp self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hPartInfoResp_PartNumber(hPartInfoResp self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hPartInfoResp_PartSize(hPartInfoResp self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hPartInfoResp_UploadUrl(hPartInfoResp self);
 
-EXPORT_C void hPartInfoResp_print(hPartInfoResp self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoResp_print(hPartInfoResp self);
 
 // ========== C-interface for hPartInfoRespList
 typedef void* hPartInfoRespList;
 
-EXPORT_C hPartInfoRespList hPartInfoRespList_New();
-EXPORT_C void hPartInfoRespList_Del(hPartInfoRespList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPartInfoRespList hPartInfoRespList_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoRespList_Del(hPartInfoRespList self);
 
-EXPORT_C void hPartInfoRespList_add(hPartInfoRespList self, char* key, char* val);
-EXPORT_C int hPartInfoRespList_size(hPartInfoRespList self);
-EXPORT_C hPartInfoResp hPartInfoRespList_at(hPartInfoRespList self, int i);
-EXPORT_C void hPartInfoRespList_print(hPartInfoRespList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoRespList_add(hPartInfoRespList self, char* key, char* val);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int hPartInfoRespList_size(hPartInfoRespList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPartInfoResp hPartInfoRespList_at(hPartInfoRespList self, int i);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoRespList_print(hPartInfoRespList self);
 
 #endif

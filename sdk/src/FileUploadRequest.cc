@@ -128,5 +128,7 @@ void hFileUploadRequest_setProgressControl(hFileUploadRequest self, hProgressCon
 
 void hFileUploadRequest_print(hFileUploadRequest self)
 {
-    std::cout << "hFileUploadRequest(" << ")" << std::endl;
+    std::cout << "hFileUploadRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

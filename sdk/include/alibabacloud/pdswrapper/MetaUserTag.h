@@ -20,7 +20,7 @@
 
 
 // ========== C-interface for hUserTag
-EXPORT_C struct hUserTag
+EXPORT_C struct ALIBABACLOUD_PDS_EXPORT hUserTag
 {
     char* key;
     char* val;
@@ -29,34 +29,34 @@ EXPORT_C struct hUserTag
 // ========== C-interface for hUserTagList
 typedef void* hUserTagList;
 
-EXPORT_C hUserTagList hUserTagList_New();
-EXPORT_C void hUserTagList_Del(hUserTagList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hUserTagList hUserTagList_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagList_Del(hUserTagList self);
 
-EXPORT_C void hUserTagList_add(hUserTagList self, char* key, char* val);
-EXPORT_C int hUserTagList_size(hUserTagList self);
-EXPORT_C struct hUserTag hUserTagList_at(hUserTagList self, int i);
-EXPORT_C void hUserTagList_print(hUserTagList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagList_add(hUserTagList self, char* key, char* val);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int hUserTagList_size(hUserTagList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT struct hUserTag hUserTagList_at(hUserTagList self, int i);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagList_print(hUserTagList self);
 
 // ========== C-interface for hUserTagMap
 typedef void* hUserTagMap;
 
-EXPORT_C hUserTagMap hUserTagMap_New();
-EXPORT_C void hUserTagMap_Del(hUserTagMap self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hUserTagMap hUserTagMap_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagMap_Del(hUserTagMap self);
 
-EXPORT_C void hUserTagMap_add(hUserTagMap self, char* key, char* val);
-EXPORT_C int hUserTagMap_size(hUserTagMap self);
-EXPORT_C struct hUserTag hUserTagMap_at(hUserTagList self, int i);
-EXPORT_C void hUserTagMap_print(hUserTagMap self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagMap_add(hUserTagMap self, char* key, char* val);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int hUserTagMap_size(hUserTagMap self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT struct hUserTag hUserTagMap_at(hUserTagList self, int i);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagMap_print(hUserTagMap self);
 
 // ========== C-interface for hUserTagKeyList
 typedef void* hUserTagKeyList;
 
-EXPORT_C hUserTagKeyList hUserTagKeyList_New();
-EXPORT_C void hUserTagKeyList_Del(hUserTagKeyList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hUserTagKeyList hUserTagKeyList_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagKeyList_Del(hUserTagKeyList self);
 
-EXPORT_C void hUserTagKeyList_add(hUserTagKeyList self, char* key);
-EXPORT_C int hUserTagKeyList_size(hUserTagKeyList self);
-EXPORT_C char* hUserTagKeyList_at(hUserTagKeyList self, int i);
-EXPORT_C void hUserTagKeyList_print(hUserTagKeyList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagKeyList_add(hUserTagKeyList self, char* key);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int hUserTagKeyList_size(hUserTagKeyList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hUserTagKeyList_at(hUserTagKeyList self, int i);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagKeyList_print(hUserTagKeyList self);
 
 #endif

@@ -23,21 +23,21 @@
 // ========== C-interface for hPdsError
 typedef void* hPdsError;
 
-EXPORT_C hPdsError hPdsError_New();
-EXPORT_C void hPdsError_Del(hPdsError self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPdsError hPdsError_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPdsError_Del(hPdsError self);
 
-EXPORT_C void hPdsError_setCode(hPdsError self, char* code);
-EXPORT_C char* hPdsError_Code(hPdsError self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPdsError_setCode(hPdsError self, char* code);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hPdsError_Code(hPdsError self);
 
-EXPORT_C void hPdsError_setMessage(hPdsError self, char* message);
-EXPORT_C char* hPdsError_Message(hPdsError self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPdsError_setMessage(hPdsError self, char* message);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hPdsError_Message(hPdsError self);
 
-EXPORT_C void hPdsError_setRequestId(hPdsError self, char* requestId);
-EXPORT_C char* hPdsError_RequestId(hPdsError self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPdsError_setRequestId(hPdsError self, char* requestId);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hPdsError_RequestId(hPdsError self);
 
-EXPORT_C void hPdsError_setHost(hPdsError self, char* host);
-EXPORT_C char* hPdsError_Host(hPdsError self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPdsError_setHost(hPdsError self, char* host);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hPdsError_Host(hPdsError self);
 
-EXPORT_C void hPdsError_print(hPdsError);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPdsError_print(hPdsError);
 
 #endif

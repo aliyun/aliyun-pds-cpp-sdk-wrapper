@@ -24,11 +24,11 @@
 // ========== C-interface for hMetaUserTagsPutOutcome
 typedef void* hMetaUserTagsPutOutcome;
 
-EXPORT_C hMetaUserTagsPutOutcome hMetaUserTagsPutOutcome_New();
-EXPORT_C void hMetaUserTagsPutOutcome_Del(hMetaUserTagsPutOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hMetaUserTagsPutOutcome hMetaUserTagsPutOutcome_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hMetaUserTagsPutOutcome_Del(hMetaUserTagsPutOutcome self);
 
-EXPORT_C bool hMetaUserTagsPutOutcome_isSuccess(hMetaUserTagsPutOutcome self);
-EXPORT_C hPdsError hMetaUserTagsPutOutcome_error(hMetaUserTagsPutOutcome self);
-EXPORT_C hMetaUserTagsPutResult hMetaUserTagsPutOutcome_result(hMetaUserTagsPutOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hMetaUserTagsPutOutcome_isSuccess(hMetaUserTagsPutOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPdsError hMetaUserTagsPutOutcome_error(hMetaUserTagsPutOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hMetaUserTagsPutResult hMetaUserTagsPutOutcome_result(hMetaUserTagsPutOutcome self);
 
 #endif

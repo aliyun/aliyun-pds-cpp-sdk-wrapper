@@ -24,11 +24,11 @@
 // ========== C-interface for hFileGetUploadUrlOutcome
 typedef void* hFileGetUploadUrlOutcome;
 
-EXPORT_C hFileGetUploadUrlOutcome hFileGetUploadUrlOutcome_New();
-EXPORT_C void hFileGetUploadUrlOutcome_Del(hFileGetUploadUrlOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileGetUploadUrlOutcome hFileGetUploadUrlOutcome_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileGetUploadUrlOutcome_Del(hFileGetUploadUrlOutcome self);
 
-EXPORT_C bool hFileGetUploadUrlOutcome_isSuccess(hFileGetUploadUrlOutcome self);
-EXPORT_C hPdsError hFileGetUploadUrlOutcome_error(hFileGetUploadUrlOutcome self);
-EXPORT_C hFileGetUploadUrlResult hFileGetUploadUrlOutcome_result(hFileGetUploadUrlOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hFileGetUploadUrlOutcome_isSuccess(hFileGetUploadUrlOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPdsError hFileGetUploadUrlOutcome_error(hFileGetUploadUrlOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileGetUploadUrlResult hFileGetUploadUrlOutcome_result(hFileGetUploadUrlOutcome self);
 
 #endif

@@ -64,5 +64,7 @@ void hFileCreateRequest_setContentHash(hFileCreateRequest self, char* contentHas
 
 void hFileCreateRequest_print(hFileCreateRequest self)
 {
-    std::cout << "hFileCreateRequest(" << ")" << std::endl;
+    std::cout << "hFileCreateRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

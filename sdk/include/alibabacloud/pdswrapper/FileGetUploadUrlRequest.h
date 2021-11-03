@@ -23,15 +23,15 @@
 // ========== C-interface for hFileGetUploadUrlRequest
 typedef void* hFileGetUploadUrlRequest;
 
-EXPORT_C hFileGetUploadUrlRequest hFileGetUploadUrlRequest_New(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileGetUploadUrlRequest hFileGetUploadUrlRequest_New(char* driveID,
                                                 char* fileID,
                                                 char* uploadID,
                                                 hPartInfoReqList partInfoReqList);
-EXPORT_C void hFileGetUploadUrlRequest_Del(hFileGetUploadUrlRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileGetUploadUrlRequest_Del(hFileGetUploadUrlRequest self);
 
-EXPORT_C void hFileGetUploadUrlRequest_setTrafficLimit(hFileGetUploadUrlRequest self, int64_t value);
-EXPORT_C void hFileGetUploadUrlRequest_setUserAgent(hFileGetUploadUrlRequest self, char* ua);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileGetUploadUrlRequest_setTrafficLimit(hFileGetUploadUrlRequest self, int64_t value);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileGetUploadUrlRequest_setUserAgent(hFileGetUploadUrlRequest self, char* ua);
 
-EXPORT_C void hFileGetUploadUrlRequest_print(hFileGetUploadUrlRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileGetUploadUrlRequest_print(hFileGetUploadUrlRequest self);
 
 #endif

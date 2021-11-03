@@ -22,14 +22,14 @@
 // ========== C-interface for hAsyncTaskGetResult
 typedef void* hAsyncTaskGetResult;
 
-EXPORT_C char* hAsyncTaskGetResult_AsyncTaskID(hAsyncTaskGetResult self);
-EXPORT_C char* hAsyncTaskGetResult_State(hAsyncTaskGetResult self);
-EXPORT_C char* hAsyncTaskGetResult_Message(hAsyncTaskGetResult self);
-EXPORT_C int64_t hAsyncTaskGetResult_ConsumedProcess(hAsyncTaskGetResult self);
-EXPORT_C int64_t hAsyncTaskGetResult_TotalProcess(hAsyncTaskGetResult self);
-EXPORT_C int64_t hAsyncTaskGetResult_ErrCode(hAsyncTaskGetResult self);
-EXPORT_C char* hAsyncTaskGetResult_Url(hAsyncTaskGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hAsyncTaskGetResult_AsyncTaskID(hAsyncTaskGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hAsyncTaskGetResult_State(hAsyncTaskGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hAsyncTaskGetResult_Message(hAsyncTaskGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hAsyncTaskGetResult_ConsumedProcess(hAsyncTaskGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hAsyncTaskGetResult_TotalProcess(hAsyncTaskGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hAsyncTaskGetResult_ErrCode(hAsyncTaskGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hAsyncTaskGetResult_Url(hAsyncTaskGetResult self);
 
-EXPORT_C void hAsyncTaskGetResult_print(hAsyncTaskGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hAsyncTaskGetResult_print(hAsyncTaskGetResult self);
 
 #endif

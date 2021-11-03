@@ -24,11 +24,11 @@
 // ========== C-interface for hPdsOutcome
 typedef void* hPdsOutcome;
 
-EXPORT_C hPdsOutcome hPdsOutcome_New();
-EXPORT_C void hPdsOutcome_Del(hPdsOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPdsOutcome hPdsOutcome_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPdsOutcome_Del(hPdsOutcome self);
 
-EXPORT_C bool hPdsOutcome_isSuccess(hPdsOutcome self);
-EXPORT_C hPdsError hPdsOutcome_error(hPdsOutcome self);
-EXPORT_C hServiceResult hPdsOutcome_result(hPdsOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hPdsOutcome_isSuccess(hPdsOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPdsError hPdsOutcome_error(hPdsOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hServiceResult hPdsOutcome_result(hPdsOutcome self);
 
 #endif

@@ -30,5 +30,7 @@ void hDirDeleteRequest_Del(hDirDeleteRequest self)
 
 void hDirDeleteRequest_print(hDirDeleteRequest self)
 {
-    std::cout << "hDirDeleteRequest(" << ")" << std::endl;
+    std::cout << "hDirDeleteRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

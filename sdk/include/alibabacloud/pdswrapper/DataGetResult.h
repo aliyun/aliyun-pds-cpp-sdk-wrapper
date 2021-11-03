@@ -23,8 +23,8 @@
 // ========== C-interface for hDataGetResult
 typedef void* hDataGetResult;
 
-EXPORT_C hRequestMetaData hDataGetResult_Metadata(hDataGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hRequestMetaData hDataGetResult_Metadata(hDataGetResult self);
 
-EXPORT_C void hDataGetResult_print(hDataGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDataGetResult_print(hDataGetResult self);
 
 #endif

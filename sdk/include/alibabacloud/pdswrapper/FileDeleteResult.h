@@ -22,6 +22,6 @@
 // ========== C-interface for hFileDeleteResult
 typedef void* hFileDeleteResult;
 
-EXPORT_C void hFileDeleteResult_print(hFileDeleteResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileDeleteResult_print(hFileDeleteResult self);
 
 #endif

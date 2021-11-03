@@ -31,5 +31,7 @@ void hFileDeleteRequest_Del(hFileDeleteRequest self)
 
 void hFileDeleteRequest_print(hFileDeleteRequest self)
 {
-    std::cout << "hFileDeleteRequest(" << ")" << std::endl;
+    std::cout << "hFileDeleteRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

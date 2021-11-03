@@ -25,11 +25,11 @@
 // ========== C-interface for hDirRenameOutcome
 typedef void* hDirRenameOutcome;
 
-EXPORT_C hDirRenameOutcome hDirRenameOutcome_New();
-EXPORT_C void hDirRenameOutcome_Del(hDirRenameOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDirRenameOutcome hDirRenameOutcome_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirRenameOutcome_Del(hDirRenameOutcome self);
 
-EXPORT_C bool hDirRenameOutcome_isSuccess(hDirRenameOutcome self);
-EXPORT_C hPdsError hDirRenameOutcome_error(hDirRenameOutcome self);
-EXPORT_C hDirRenameResult hDirRenameOutcome_result(hDirRenameOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hDirRenameOutcome_isSuccess(hDirRenameOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPdsError hDirRenameOutcome_error(hDirRenameOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDirRenameResult hDirRenameOutcome_result(hDirRenameOutcome self);
 
 #endif

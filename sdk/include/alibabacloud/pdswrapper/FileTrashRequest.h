@@ -22,10 +22,10 @@
 // ========== C-interface for hFileTrashRequest
 typedef void* hFileTrashRequest;
 
-EXPORT_C hFileTrashRequest hFileTrashRequest_New(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileTrashRequest hFileTrashRequest_New(char* driveID,
                                                 char* fileID);
-EXPORT_C void hFileTrashRequest_Del(hFileTrashRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileTrashRequest_Del(hFileTrashRequest self);
 
-EXPORT_C void hFileTrashRequest_print(hFileTrashRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileTrashRequest_print(hFileTrashRequest self);
 
 #endif

@@ -46,5 +46,7 @@ void hFileGetUploadUrlRequest_setUserAgent(hFileGetUploadUrlRequest self, char* 
 
 void hFileGetUploadUrlRequest_print(hFileGetUploadUrlRequest self)
 {
-    std::cout << "hFileGetUploadUrlRequest(" << ")" << std::endl;
+    std::cout << "hFileGetUploadUrlRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

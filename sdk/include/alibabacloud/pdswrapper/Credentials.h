@@ -22,12 +22,12 @@
 // ========== C-interface for hCredentials
 typedef void* hCredentials;
 
-EXPORT_C hCredentials hCredentials_New(char* accessToken);
-EXPORT_C void hCredentials_Del(hCredentials self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hCredentials hCredentials_New(char* accessToken);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hCredentials_Del(hCredentials self);
 
-EXPORT_C void hCredentials_setAccessToken(hCredentials self, char* token);
-EXPORT_C char* hCredentials_AccessToken(hCredentials self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hCredentials_setAccessToken(hCredentials self, char* token);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hCredentials_AccessToken(hCredentials self);
 
-EXPORT_C void hCredentials_print(hCredentials);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hCredentials_print(hCredentials);
 
 #endif

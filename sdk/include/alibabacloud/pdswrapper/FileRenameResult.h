@@ -22,14 +22,14 @@
 // ========== C-interface for hFileRenameResult
 typedef void* hFileRenameResult;
 
-EXPORT_C char* hFileRenameResult_DriveID(hFileRenameResult self);
-EXPORT_C char* hFileRenameResult_FileID(hFileRenameResult self);
-EXPORT_C char* hFileRenameResult_Name(hFileRenameResult self);
-EXPORT_C char* hFileRenameResult_ParentFileID(hFileRenameResult self);
-EXPORT_C char* hFileRenameResult_Type(hFileRenameResult self);
-EXPORT_C char* hFileRenameResult_CreatedAt(hFileRenameResult self);
-EXPORT_C char* hFileRenameResult_UpdatedAt(hFileRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileRenameResult_DriveID(hFileRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileRenameResult_FileID(hFileRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileRenameResult_Name(hFileRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileRenameResult_ParentFileID(hFileRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileRenameResult_Type(hFileRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileRenameResult_CreatedAt(hFileRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileRenameResult_UpdatedAt(hFileRenameResult self);
 
-EXPORT_C void hFileRenameResult_print(hFileRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileRenameResult_print(hFileRenameResult self);
 
 #endif

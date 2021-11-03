@@ -23,18 +23,18 @@
 // ========== C-interface for hFileCreateResult
 typedef void* hFileCreateResult;
 
-EXPORT_C char* hFileCreateResult_DriveID(hFileCreateResult self);
-EXPORT_C char* hFileCreateResult_EncryptMode(hFileCreateResult self);
-EXPORT_C char* hFileCreateResult_FileID(hFileCreateResult self);
-EXPORT_C char* hFileCreateResult_FileName(hFileCreateResult self);
-EXPORT_C char* hFileCreateResult_Location(hFileCreateResult self);
-EXPORT_C char* hFileCreateResult_ParentFileID(hFileCreateResult self);
-EXPORT_C bool hFileCreateResult_RapidUpload(hFileCreateResult self);
-EXPORT_C char* hFileCreateResult_Type(hFileCreateResult self);
-EXPORT_C char* hFileCreateResult_UploadID(hFileCreateResult self);
-EXPORT_C bool hFileCreateResult_Exist(hFileCreateResult self);
-EXPORT_C hPartInfoRespList hFileCreateResult_PartInfoRespList(hFileCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCreateResult_DriveID(hFileCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCreateResult_EncryptMode(hFileCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCreateResult_FileID(hFileCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCreateResult_FileName(hFileCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCreateResult_Location(hFileCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCreateResult_ParentFileID(hFileCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hFileCreateResult_RapidUpload(hFileCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCreateResult_Type(hFileCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileCreateResult_UploadID(hFileCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hFileCreateResult_Exist(hFileCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPartInfoRespList hFileCreateResult_PartInfoRespList(hFileCreateResult self);
 
-EXPORT_C void hFileCreateResult_print(hFileCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileCreateResult_print(hFileCreateResult self);
 
 #endif

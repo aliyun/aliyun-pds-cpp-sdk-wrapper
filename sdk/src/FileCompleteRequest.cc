@@ -32,5 +32,7 @@ void hFileCompleteRequest_Del(hFileCompleteRequest self)
 
 void hFileCompleteRequest_print(hFileCompleteRequest self)
 {
-    std::cout << "hFileCompleteRequest(" << ")" << std::endl;
+    std::cout << "hFileCompleteRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

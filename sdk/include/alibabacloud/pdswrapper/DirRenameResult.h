@@ -23,14 +23,14 @@
 // ========== C-interface for hDirRenameResult
 typedef void* hDirRenameResult;
 
-EXPORT_C char* hDirRenameResult_DriveID(hDirRenameResult self);
-EXPORT_C char* hDirRenameResult_FileID(hDirRenameResult self);
-EXPORT_C char* hDirRenameResult_Name(hDirRenameResult self);
-EXPORT_C char* hDirRenameResult_ParentFileID(hDirRenameResult self);
-EXPORT_C char* hDirRenameResult_Type(hDirRenameResult self);
-EXPORT_C char* hDirRenameResult_CreatedAt(hDirRenameResult self);
-EXPORT_C char* hDirRenameResult_UpdatedAt(hDirRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirRenameResult_DriveID(hDirRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirRenameResult_FileID(hDirRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirRenameResult_Name(hDirRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirRenameResult_ParentFileID(hDirRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirRenameResult_Type(hDirRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirRenameResult_CreatedAt(hDirRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirRenameResult_UpdatedAt(hDirRenameResult self);
 
-EXPORT_C void hDirRenameResult_print(hDirRenameResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirRenameResult_print(hDirRenameResult self);
 
 #endif

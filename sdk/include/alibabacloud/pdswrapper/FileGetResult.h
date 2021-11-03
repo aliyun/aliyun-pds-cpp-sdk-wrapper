@@ -23,33 +23,33 @@
 // ========== C-interface for hFileGetResult
 typedef void* hFileGetResult;
 
-EXPORT_C char* hFileGetResult_Category(hFileGetResult self);
-EXPORT_C char* hFileGetResult_ContentHash(hFileGetResult self);
-EXPORT_C char* hFileGetResult_ContentHashName(hFileGetResult self);
-EXPORT_C char* hFileGetResult_ContentType(hFileGetResult self);
-EXPORT_C char* hFileGetResult_Crc64Hash(hFileGetResult self);
-EXPORT_C char* hFileGetResult_CreatedAt(hFileGetResult self);
-EXPORT_C char* hFileGetResult_Description(hFileGetResult self);
-EXPORT_C char* hFileGetResult_DownloadUrl(hFileGetResult self);
-EXPORT_C char* hFileGetResult_DriveID(hFileGetResult self);
-EXPORT_C char* hFileGetResult_EncryptMode(hFileGetResult self);
-EXPORT_C char* hFileGetResult_FileExtension(hFileGetResult self);
-EXPORT_C char* hFileGetResult_FileID(hFileGetResult self);
-EXPORT_C bool hFileGetResult_Hidden(hFileGetResult self);
-EXPORT_C char* hFileGetResult_Name(hFileGetResult self);
-EXPORT_C char* hFileGetResult_ParentFileID(hFileGetResult self);
-EXPORT_C int64_t hFileGetResult_PunishFlag(hFileGetResult self);
-EXPORT_C int64_t hFileGetResult_Size(hFileGetResult self);
-EXPORT_C bool hFileGetResult_Starred(hFileGetResult self);
-EXPORT_C char* hFileGetResult_Status(hFileGetResult self);
-EXPORT_C char* hFileGetResult_Thumbnail(hFileGetResult self);
-EXPORT_C bool hFileGetResult_Trashed(hFileGetResult self);
-EXPORT_C char* hFileGetResult_Type(hFileGetResult self);
-EXPORT_C char* hFileGetResult_UpdatedAT(hFileGetResult self);
-EXPORT_C char* hFileGetResult_Url(hFileGetResult self);
-EXPORT_C char* hFileGetResult_UploadID(hFileGetResult self);
-EXPORT_C hUserTagMap hFileGetResult_UserTags(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_Category(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_ContentHash(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_ContentHashName(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_ContentType(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_Crc64Hash(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_CreatedAt(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_Description(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_DownloadUrl(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_DriveID(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_EncryptMode(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_FileExtension(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_FileID(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hFileGetResult_Hidden(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_Name(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_ParentFileID(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hFileGetResult_PunishFlag(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hFileGetResult_Size(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hFileGetResult_Starred(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_Status(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_Thumbnail(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hFileGetResult_Trashed(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_Type(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_UpdatedAT(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_Url(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileGetResult_UploadID(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hUserTagMap hFileGetResult_UserTags(hFileGetResult self);
 
-EXPORT_C void hFileGetResult_print(hFileGetResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileGetResult_print(hFileGetResult self);
 
 #endif

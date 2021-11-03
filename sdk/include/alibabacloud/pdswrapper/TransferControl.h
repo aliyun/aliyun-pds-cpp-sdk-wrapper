@@ -24,15 +24,15 @@
 typedef void(*TransferProgressHandler)(size_t, int64_t, int64_t, void*);
 typedef void* hTransferProgress;
 
-EXPORT_C hTransferProgress hTransferProgress_New(TransferProgressHandler handler, void* userData);
-EXPORT_C void hTransferProgress_Del(hTransferProgress self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hTransferProgress hTransferProgress_New(TransferProgressHandler handler, void* userData);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hTransferProgress_Del(hTransferProgress self);
 
 
 // ========== C-interface for hProgressControl
 typedef int32_t(*ProgressControlHandler)(void*);
 typedef void* hProgressControl;
 
-EXPORT_C hProgressControl hProgressControl_New(ProgressControlHandler handler, void* userData);
-EXPORT_C void hProgressControl_Del(hProgressControl self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hProgressControl hProgressControl_New(ProgressControlHandler handler, void* userData);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hProgressControl_Del(hProgressControl self);
 
 #endif

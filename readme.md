@@ -1,30 +1,29 @@
 # 阿里云PDS C++工具 wrapper 套件
 
-编译 pds sdk
+linux
 
 ``` txt
+export PROJECT_ROOT=/xxx
+mkdir build
+cd build
+cmake -DPDS_SOURCE_DIR=${PROJECT_ROOT}/aliyun-pds-cpp-sdk \
+      -DPDS_LIBS_DIR=${PROJECT_ROOT}/aliyun-pds-cpp-sdk/build/lib ..
+make
+```
+
+mac
+
+``` txt
+export PROJECT_ROOT=/xxx
+mkdir build
+cd build
 cmake -DOPENSSL_ROOT_DIR=/usr/local/Cellar/openssl@1.1/1.1.1l_1/  \
       -DOPENSSL_LIBRARIES=/usr/local/Cellar/openssl@1.1/1.1.1l_1/lib  \
-      -DOPENSSL_INCLUDE_DIRS=/usr/local/Cellar/openssl@1.1/1.1.1l_1/include/ \
-      -DCMAKE_BUILD_TYPE=Debug ..
-```
-
-编译 pds sdk wrapper
-
-``` txt
-export WRAPPER_HOME=$PWD
-cd ${WRAPPER_HOME}/sdk && mkdir build
-cd build
-cmake ../
-```
-
-编译 sample
-
-``` txt
-export WRAPPER_HOME=$PWD
-cd ${WRAPPER_HOME}/sample/dir && mkdir build
-cd build
-cmake -DPDS_WRAPPER_INCLUDE=${WRAPPER_HOME}/sdk/include ../
+      -DOPENSSL_INCLUDE_DIRS=/usr/local/Cellar/openssl@1.1/1.1.1l_1/include \
+      -DPDS_SOURCE_DIR=${PROJECT_ROOT}/aliyun-pds-cpp-sdk \
+      -DPDS_LIBS_DIR=${PROJECT_ROOT}/aliyun-pds-cpp-sdk/build/lib/ \
+      -DBUILD_SHARED_LIBS=ON ..
+make
 ```
 
 内存管理

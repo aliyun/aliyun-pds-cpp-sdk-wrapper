@@ -24,11 +24,11 @@
 // ========== C-interface for hFileRenameOutcome
 typedef void* hFileRenameOutcome;
 
-EXPORT_C hFileRenameOutcome hFileRenameOutcome_New();
-EXPORT_C void hFileRenameOutcome_Del(hFileRenameOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileRenameOutcome hFileRenameOutcome_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileRenameOutcome_Del(hFileRenameOutcome self);
 
-EXPORT_C bool hFileRenameOutcome_isSuccess(hFileRenameOutcome self);
-EXPORT_C hPdsError hFileRenameOutcome_error(hFileRenameOutcome self);
-EXPORT_C hFileRenameResult hFileRenameOutcome_result(hFileRenameOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hFileRenameOutcome_isSuccess(hFileRenameOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPdsError hFileRenameOutcome_error(hFileRenameOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileRenameResult hFileRenameOutcome_result(hFileRenameOutcome self);
 
 #endif

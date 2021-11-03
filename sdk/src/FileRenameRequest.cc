@@ -33,5 +33,7 @@ void hFileRenameRequest_Del(hFileRenameRequest self)
 
 void hFileRenameRequest_print(hFileRenameRequest self)
 {
-    std::cout << "hFileRenameRequest(" << ")" << std::endl;
+    std::cout << "hFileRenameRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

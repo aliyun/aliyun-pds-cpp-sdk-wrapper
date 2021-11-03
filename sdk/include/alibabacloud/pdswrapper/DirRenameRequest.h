@@ -23,12 +23,12 @@
 // ========== C-interface for hDirRenameRequest
 typedef void* hDirRenameRequest;
 
-EXPORT_C hDirRenameRequest hDirRenameRequest_New(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDirRenameRequest hDirRenameRequest_New(char* driveID,
                                                 char* fileID,
                                                 char* name,
                                                 char* checkNameMode);
-EXPORT_C void hDirRenameRequest_Del(hDirRenameRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirRenameRequest_Del(hDirRenameRequest self);
 
-EXPORT_C void hDirRenameRequest_print(hDirRenameRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirRenameRequest_print(hDirRenameRequest self);
 
 #endif

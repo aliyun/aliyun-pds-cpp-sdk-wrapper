@@ -25,11 +25,11 @@
 // ========== C-interface for hDirListOutcome
 typedef void* hDirListOutcome;
 
-EXPORT_C hDirListOutcome hDirListOutcome_New();
-EXPORT_C void hDirListOutcome_Del(hDirListOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDirListOutcome hDirListOutcome_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirListOutcome_Del(hDirListOutcome self);
 
-EXPORT_C bool hDirListOutcome_isSuccess(hDirListOutcome self);
-EXPORT_C hPdsError hDirListOutcome_error(hDirListOutcome self);
-EXPORT_C hDirListResult hDirListOutcome_result(hDirListOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hDirListOutcome_isSuccess(hDirListOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPdsError hDirListOutcome_error(hDirListOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDirListResult hDirListOutcome_result(hDirListOutcome self);
 
 #endif

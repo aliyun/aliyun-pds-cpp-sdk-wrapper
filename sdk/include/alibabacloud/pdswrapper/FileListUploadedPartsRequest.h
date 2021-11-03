@@ -23,15 +23,15 @@
 // ========== C-interface for hFileListUploadedPartsRequest
 typedef void* hFileListUploadedPartsRequest;
 
-EXPORT_C hFileListUploadedPartsRequest hFileListUploadedPartsRequest_New(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileListUploadedPartsRequest hFileListUploadedPartsRequest_New(char* driveID,
                                                 char* fileID,
                                                 char* uploadID,
                                                 int64_t marker,
                                                 int64_t limit);
-EXPORT_C void hFileListUploadedPartsRequest_Del(hFileListUploadedPartsRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileListUploadedPartsRequest_Del(hFileListUploadedPartsRequest self);
 
-EXPORT_C void hFileListUploadedPartsRequest_setMarker(hFileListUploadedPartsRequest self, int64_t marker);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileListUploadedPartsRequest_setMarker(hFileListUploadedPartsRequest self, int64_t marker);
 
-EXPORT_C void hFileListUploadedPartsRequest_print(hFileListUploadedPartsRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileListUploadedPartsRequest_print(hFileListUploadedPartsRequest self);
 
 #endif

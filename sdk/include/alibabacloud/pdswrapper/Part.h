@@ -22,25 +22,25 @@
 // ========== C-interface for hPart
 typedef void* hPart;
 
-EXPORT_C hPart hPart_New(int64_t partNumber, int64_t partSize, char* etag);
-EXPORT_C void hPart_Del(hPart self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPart hPart_New(int64_t partNumber, int64_t partSize, char* etag);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPart_Del(hPart self);
 
-EXPORT_C int64_t hPart_PartNumber(hPart self);
-EXPORT_C int64_t hPart_PartSize(hPart self);
-EXPORT_C int64_t hPart_CRC64(hPart self);
-EXPORT_C char* hPart_ETag(hPart self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hPart_PartNumber(hPart self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hPart_PartSize(hPart self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hPart_CRC64(hPart self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hPart_ETag(hPart self);
 
-EXPORT_C void hPart_print(hPart self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPart_print(hPart self);
 
 // ========== C-interface for hPartList
 typedef void* hPartList;
 
-EXPORT_C hPartList hPartList_New();
-EXPORT_C void hPartList_Del(hPartList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPartList hPartList_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartList_Del(hPartList self);
 
-EXPORT_C void hPartList_add(hPartList self, hPart partInfo);
-EXPORT_C int hPartList_size(hPartList self);
-EXPORT_C hPart hPartList_at(hPartList self, int i);
-EXPORT_C void hPartList_print(hPartList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartList_add(hPartList self, hPart partInfo);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int hPartList_size(hPartList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPart hPartList_at(hPartList self, int i);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartList_print(hPartList self);
 
 #endif

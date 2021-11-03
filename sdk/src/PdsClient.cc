@@ -88,7 +88,7 @@ hAsyncTaskGetOutcome hPdsClient_AsyncTaskGet(hPdsClient self, hAsyncTaskGetReque
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::AsyncTaskGetRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::AsyncTaskGetOutcome(std::move(p->AsyncTaskGet(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::AsyncTaskGetOutcome(p->AsyncTaskGet(*req));
 }
 
 // ========== dir
@@ -96,35 +96,35 @@ hDirCreateOutcome hPdsClient_DirCreate(hPdsClient self, hDirCreateRequest reques
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::DirCreateRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::DirCreateOutcome(std::move(p->DirCreate(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::DirCreateOutcome(p->DirCreate(*req));
 }
 
 hDirListOutcome hPdsClient_DirList(hPdsClient self, hDirListRequest request)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::DirListRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::DirListOutcome(std::move(p->DirList(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::DirListOutcome(p->DirList(*req));
 }
 
 hDirRenameOutcome hPdsClient_DirRename(hPdsClient self, hDirRenameRequest request)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::DirRenameRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::DirRenameOutcome(std::move(p->DirRename(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::DirRenameOutcome(p->DirRename(*req));
 }
 
 hDirTrashOutcome hPdsClient_DirTrash(hPdsClient self, hDirTrashRequest request)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::DirTrashRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::DirTrashOutcome(std::move(p->DirTrash(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::DirTrashOutcome(p->DirTrash(*req));
 }
 
 hDirDeleteOutcome hPdsClient_DirDelete(hPdsClient self, hDirDeleteRequest request)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::DirDeleteRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::DirDeleteOutcome(std::move(p->DirDelete(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::DirDeleteOutcome(p->DirDelete(*req));
 }
 
 // ========== file
@@ -132,63 +132,63 @@ hFileCreateOutcome hPdsClient_FileCreate(hPdsClient self, hFileCreateRequest req
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::FileCreateRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::FileCreateOutcome(std::move(p->FileCreate(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::FileCreateOutcome(p->FileCreate(*req));
 }
 
 hFileGetUploadUrlOutcome hPdsClient_FileGetUploadUrl(hPdsClient self, hFileGetUploadUrlRequest request)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::FileGetUploadUrlRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::FileGetUploadUrlOutcome(std::move(p->FileGetUploadUrl(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::FileGetUploadUrlOutcome(p->FileGetUploadUrl(*req));
 }
 
 hFileListUploadedPartsOutcome hPdsClient_FileListUploadedParts(hPdsClient self, hFileListUploadedPartsRequest request)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::FileListUploadedPartsRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::FileListUploadedPartsOutcome(std::move(p->FileListUploadedParts(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::FileListUploadedPartsOutcome(p->FileListUploadedParts(*req));
 }
 
 hFileCompleteOutcome hPdsClient_FileComplete(hPdsClient self, hFileCompleteRequest request)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::FileCompleteRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::FileCompleteOutcome(std::move(p->FileComplete(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::FileCompleteOutcome(p->FileComplete(*req));
 }
 
 hFileGetDownloadUrlOutcome hPdsClient_FileGetDownloadUrl(hPdsClient self, hFileGetDownloadUrlRequest request)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::FileGetDownloadUrlRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::FileGetDownloadUrlOutcome(std::move(p->FileGetDownloadUrl(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::FileGetDownloadUrlOutcome(p->FileGetDownloadUrl(*req));
 }
 
 hFileGetOutcome hPdsClient_FileGet(hPdsClient self, hFileGetRequest request)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::FileGetRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::FileGetOutcome(std::move(p->FileGet(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::FileGetOutcome(p->FileGet(*req));
 }
 
 hFileRenameOutcome hPdsClient_FileRename(hPdsClient self, hFileRenameRequest request)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::FileRenameRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::FileRenameOutcome(std::move(p->FileRename(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::FileRenameOutcome(p->FileRename(*req));
 }
 
 hFileTrashOutcome hPdsClient_FileTrash(hPdsClient self, hFileTrashRequest request)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::FileTrashRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::FileTrashOutcome(std::move(p->FileTrash(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::FileTrashOutcome(p->FileTrash(*req));
 }
 
 hFileDeleteOutcome hPdsClient_FileDelete(hPdsClient self, hFileDeleteRequest request)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::FileDeleteRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::FileDeleteOutcome(std::move(p->FileDelete(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::FileDeleteOutcome(p->FileDelete(*req));
 }
 
 // ========== data
@@ -198,7 +198,7 @@ hDataPutOutcome hPdsClient_DataPutByUrl(hPdsClient self, char* url, char* data)
     std::shared_ptr<std::stringstream> s = std::make_shared<std::stringstream>();
     s->write(data, strlen(data));
 
-    return new (std::nothrow) AlibabaCloud::PDS::DataPutOutcome(std::move(p->DataPutByUrl(url, s)));
+    return new (std::nothrow) AlibabaCloud::PDS::DataPutOutcome(p->DataPutByUrl(url, s));
 }
 
 // ========== meta
@@ -206,14 +206,14 @@ hMetaUserTagsPutOutcome hPdsClient_MetaUserTagsPut(hPdsClient self, hMetaUserTag
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::MetaUserTagsPutRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::MetaUserTagsPutOutcome(std::move(p->MetaUserTagsPut(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::MetaUserTagsPutOutcome(p->MetaUserTagsPut(*req));
 }
 
 hPdsOutcome hPdsClient_MetaUserTagsDelete(hPdsClient self, hMetaUserTagsDeleteRequest request)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::MetaUserTagsDeleteRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::PdsOutcome(std::move(p->MetaUserTagsDelete(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::PdsOutcome(p->MetaUserTagsDelete(*req));
 }
 
 // ========== Resumable Operation
@@ -221,12 +221,12 @@ hFileCompleteOutcome hPdsClient_ResumableFileUpload(hPdsClient self, hFileUpload
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::FileUploadRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::FileCompleteOutcome(std::move(p->ResumableFileUpload(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::FileCompleteOutcome(p->ResumableFileUpload(*req));
 }
 
 hDataGetOutcome hPdsClient_ResumableFileDownload(hPdsClient self, hFileDownloadRequest request)
 {
     auto p = reinterpret_cast<AlibabaCloud::PDS::PdsClient*>(self);
     auto req = reinterpret_cast<AlibabaCloud::PDS::FileDownloadRequest*>(request);
-    return new (std::nothrow) AlibabaCloud::PDS::DataGetOutcome(std::move(p->ResumableFileDownload(*req)));
+    return new (std::nothrow) AlibabaCloud::PDS::DataGetOutcome(p->ResumableFileDownload(*req));
 }

@@ -24,19 +24,19 @@
 // ========== C-interface for hFileCreateRequest
 typedef void* hFileCreateRequest;
 
-EXPORT_C hFileCreateRequest hFileCreateRequest_New(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileCreateRequest hFileCreateRequest_New(char* driveID,
                                                 char* parentFileID,
                                                 char* name,
                                                 char* fileID,
                                                 char* checkNameMode,
                                                 int64_t size);
-EXPORT_C void hFileCreateRequest_Del(hFileCreateRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileCreateRequest_Del(hFileCreateRequest self);
 
-EXPORT_C void hFileCreateRequest_setPartInfoList(hFileCreateRequest self, hPartInfoReqList partInfoReqList);
-EXPORT_C void hFileCreateRequest_setUserTags(hFileCreateRequest self, hUserTagList userTagList);
-EXPORT_C void hFileCreateRequest_setPreHash(hFileCreateRequest self, char* preHash);
-EXPORT_C void hFileCreateRequest_setContentHash(hFileCreateRequest self, char* contentHash);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileCreateRequest_setPartInfoList(hFileCreateRequest self, hPartInfoReqList partInfoReqList);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileCreateRequest_setUserTags(hFileCreateRequest self, hUserTagList userTagList);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileCreateRequest_setPreHash(hFileCreateRequest self, char* preHash);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileCreateRequest_setContentHash(hFileCreateRequest self, char* contentHash);
 
-EXPORT_C void hFileCreateRequest_print(hFileCreateRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileCreateRequest_print(hFileCreateRequest self);
 
 #endif

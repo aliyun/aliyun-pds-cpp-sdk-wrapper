@@ -24,11 +24,11 @@
 // ========== C-interface for hFileCreateOutcome
 typedef void* hFileCreateOutcome;
 
-EXPORT_C hFileCreateOutcome hFileCreateOutcome_New();
-EXPORT_C void hFileCreateOutcome_Del(hFileCreateOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileCreateOutcome hFileCreateOutcome_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileCreateOutcome_Del(hFileCreateOutcome self);
 
-EXPORT_C bool hFileCreateOutcome_isSuccess(hFileCreateOutcome self);
-EXPORT_C hPdsError hFileCreateOutcome_error(hFileCreateOutcome self);
-EXPORT_C hFileCreateResult hFileCreateOutcome_result(hFileCreateOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hFileCreateOutcome_isSuccess(hFileCreateOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPdsError hFileCreateOutcome_error(hFileCreateOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileCreateResult hFileCreateOutcome_result(hFileCreateOutcome self);
 
 #endif

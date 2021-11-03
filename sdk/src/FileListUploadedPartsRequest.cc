@@ -40,5 +40,7 @@ void hFileListUploadedPartsRequest_setMarker(hFileListUploadedPartsRequest self,
 
 void hFileListUploadedPartsRequest_print(hFileListUploadedPartsRequest self)
 {
-    std::cout << "hFileListUploadedPartsRequest(" << ")" << std::endl;
+    std::cout << "hFileListUploadedPartsRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

@@ -23,9 +23,9 @@
 // ========== C-interface for hDirListResult
 typedef void* hDirListResult;
 
-EXPORT_C char* hDirListResult_NextMarker(hDirListResult self);
-EXPORT_C hFileItemList hDirListResult_FileItemList(hDirListResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirListResult_NextMarker(hDirListResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileItemList hDirListResult_FileItemList(hDirListResult self);
 
-EXPORT_C void hDirListResult_print(hDirListResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirListResult_print(hDirListResult self);
 
 #endif

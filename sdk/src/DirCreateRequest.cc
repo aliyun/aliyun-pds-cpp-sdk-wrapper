@@ -41,5 +41,7 @@ void hDirCreateRequest_setUserTags(hDirCreateRequest self, hUserTagList userTags
 
 void hDirCreateRequest_print(hDirCreateRequest self)
 {
-    std::cout << "hDirCreateRequest(" << ")" << std::endl;
+    std::cout << "hDirCreateRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

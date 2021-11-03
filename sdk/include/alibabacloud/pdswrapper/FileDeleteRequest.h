@@ -24,10 +24,10 @@
 // ========== C-interface for hFileDeleteRequest
 typedef void* hFileDeleteRequest;
 
-EXPORT_C hFileDeleteRequest hFileDeleteRequest_New(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileDeleteRequest hFileDeleteRequest_New(char* driveID,
                                                 char* fileID);
-EXPORT_C void hFileDeleteRequest_Del(hFileDeleteRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileDeleteRequest_Del(hFileDeleteRequest self);
 
-EXPORT_C void hFileDeleteRequest_print(hFileDeleteRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileDeleteRequest_print(hFileDeleteRequest self);
 
 #endif

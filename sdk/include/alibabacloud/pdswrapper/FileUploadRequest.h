@@ -24,20 +24,20 @@
 // ========== C-interface for hFileUploadRequest
 typedef void* hFileUploadRequest;
 
-EXPORT_C hFileUploadRequest hFileUploadRequest_New_1(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileUploadRequest hFileUploadRequest_New_1(char* driveID,
                                                 char* parentFileID,
                                                 char* name,
                                                 char* fileID,
                                                 char* checkNameMode,
                                                 char* filePath,
                                                 char* checkpointDir);
-EXPORT_C hFileUploadRequest hFileUploadRequest_New_2(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileUploadRequest hFileUploadRequest_New_2(char* driveID,
                                                 char* parentFileID,
                                                 char* name,
                                                 char* fileID,
                                                 char* checkNameMode,
                                                 char* filePath);
-EXPORT_C hFileUploadRequest hFileUploadRequest_New_3(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileUploadRequest hFileUploadRequest_New_3(char* driveID,
                                                 char* parentFileID,
                                                 char* name,
                                                 char* fileID,
@@ -46,20 +46,20 @@ EXPORT_C hFileUploadRequest hFileUploadRequest_New_3(char* driveID,
                                                 char* checkpointDir,
                                                 uint64_t partSize,
                                                 uint32_t threadNum);
-EXPORT_C void hFileUploadRequest_Del(hFileUploadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileUploadRequest_Del(hFileUploadRequest self);
 
-EXPORT_C char* hFileUploadRequest_FilePath(hFileUploadRequest self);
-EXPORT_C char* hFileUploadRequest_DriveID(hFileUploadRequest self);
-EXPORT_C char* hFileUploadRequest_ParentFileID(hFileUploadRequest self);
-EXPORT_C char* hFileUploadRequest_Name(hFileUploadRequest self);
-EXPORT_C char* hFileUploadRequest_FileID(hFileUploadRequest self);
-EXPORT_C char* hFileUploadRequest_CheckNameMode(hFileUploadRequest self);
-EXPORT_C hUserTagList hFileUploadRequest_UserTags(hFileUploadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileUploadRequest_FilePath(hFileUploadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileUploadRequest_DriveID(hFileUploadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileUploadRequest_ParentFileID(hFileUploadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileUploadRequest_Name(hFileUploadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileUploadRequest_FileID(hFileUploadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileUploadRequest_CheckNameMode(hFileUploadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hUserTagList hFileUploadRequest_UserTags(hFileUploadRequest self);
 
-EXPORT_C void hFileUploadRequest_setUserTags(hFileUploadRequest self, hUserTagList userTags);
-EXPORT_C void hFileUploadRequest_setTransferProgress(hFileUploadRequest self, hTransferProgress progress);
-EXPORT_C void hFileUploadRequest_setProgressControl(hFileUploadRequest self, hProgressControl control);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileUploadRequest_setUserTags(hFileUploadRequest self, hUserTagList userTags);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileUploadRequest_setTransferProgress(hFileUploadRequest self, hTransferProgress progress);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileUploadRequest_setProgressControl(hFileUploadRequest self, hProgressControl control);
 
-EXPORT_C void hFileUploadRequest_print(hFileUploadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileUploadRequest_print(hFileUploadRequest self);
 
 #endif

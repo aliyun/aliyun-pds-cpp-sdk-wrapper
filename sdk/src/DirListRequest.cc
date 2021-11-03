@@ -67,5 +67,7 @@ void hDirListRequest_setAll(hDirListRequest self, bool all)
 
 void hDirListRequest_print(hDirListRequest self)
 {
-    std::cout << "hDirListRequest(" << ")" << std::endl;
+    std::cout << "hDirListRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

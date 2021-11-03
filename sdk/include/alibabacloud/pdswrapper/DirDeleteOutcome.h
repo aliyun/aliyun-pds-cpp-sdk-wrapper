@@ -24,11 +24,11 @@
 // ========== C-interface for hDirDeleteOutcome
 typedef void* hDirDeleteOutcome;
 
-EXPORT_C hDirDeleteOutcome hDirDeleteOutcome_New();
-EXPORT_C void hDirDeleteOutcome_Del(hDirDeleteOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDirDeleteOutcome hDirDeleteOutcome_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirDeleteOutcome_Del(hDirDeleteOutcome self);
 
-EXPORT_C bool hDirDeleteOutcome_isSuccess(hDirDeleteOutcome self);
-EXPORT_C hPdsError hDirDeleteOutcome_error(hDirDeleteOutcome self);
-EXPORT_C hDirDeleteResult hDirDeleteOutcome_result(hDirDeleteOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hDirDeleteOutcome_isSuccess(hDirDeleteOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPdsError hDirDeleteOutcome_error(hDirDeleteOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hDirDeleteResult hDirDeleteOutcome_result(hDirDeleteOutcome self);
 
 #endif

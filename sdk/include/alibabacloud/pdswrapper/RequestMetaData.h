@@ -22,16 +22,16 @@
 // ========== C-interface for hRequestMetaData
 typedef void* hRequestMetaData;
 
-EXPORT_C hRequestMetaData hRequestMetaData_New();
-EXPORT_C void hRequestMetaData_Del(hRequestMetaData self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hRequestMetaData hRequestMetaData_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hRequestMetaData_Del(hRequestMetaData self);
 
-EXPORT_C int64_t hRequestMetaData_ContentLength(hRequestMetaData self);
-EXPORT_C char* hRequestMetaData_ContentType(hRequestMetaData self);
-EXPORT_C char* hRequestMetaData_ContentMd5(hRequestMetaData self);
-EXPORT_C uint64_t hRequestMetaData_CRC64(hRequestMetaData self);
-EXPORT_C char* hRequestMetaData_ETag(hRequestMetaData self);
-EXPORT_C char* hRequestMetaData_VersionId(hRequestMetaData self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hRequestMetaData_ContentLength(hRequestMetaData self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hRequestMetaData_ContentType(hRequestMetaData self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hRequestMetaData_ContentMd5(hRequestMetaData self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT uint64_t hRequestMetaData_CRC64(hRequestMetaData self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hRequestMetaData_ETag(hRequestMetaData self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hRequestMetaData_VersionId(hRequestMetaData self);
 
-EXPORT_C void hRequestMetaData_print(hRequestMetaData self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hRequestMetaData_print(hRequestMetaData self);
 
 #endif

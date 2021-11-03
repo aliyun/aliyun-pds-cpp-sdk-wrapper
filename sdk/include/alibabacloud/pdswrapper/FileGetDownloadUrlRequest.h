@@ -22,14 +22,14 @@
 // ========== C-interface for hFileGetDownloadUrlRequest
 typedef void* hFileGetDownloadUrlRequest;
 
-EXPORT_C hFileGetDownloadUrlRequest hFileGetDownloadUrlRequest_New(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileGetDownloadUrlRequest hFileGetDownloadUrlRequest_New(char* driveID,
                                                 char* shareID,
                                                 char* fileID);
-EXPORT_C void hFileGetDownloadUrlRequest_Del(hFileGetDownloadUrlRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileGetDownloadUrlRequest_Del(hFileGetDownloadUrlRequest self);
 
-EXPORT_C void hFileGetDownloadUrlRequest_setUrlExpireSec(hFileGetDownloadUrlRequest self, int64_t urlExpireSec);
-EXPORT_C void hFileGetDownloadUrlRequest_setShareToken(hFileGetDownloadUrlRequest self, char* shareToken);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileGetDownloadUrlRequest_setUrlExpireSec(hFileGetDownloadUrlRequest self, int64_t urlExpireSec);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileGetDownloadUrlRequest_setShareToken(hFileGetDownloadUrlRequest self, char* shareToken);
 
-EXPORT_C void hFileGetDownloadUrlRequest_print(hFileGetDownloadUrlRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileGetDownloadUrlRequest_print(hFileGetDownloadUrlRequest self);
 
 #endif

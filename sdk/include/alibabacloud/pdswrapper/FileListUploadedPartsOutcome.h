@@ -24,11 +24,11 @@
 // ========== C-interface for hFileListUploadedPartsOutcome
 typedef void* hFileListUploadedPartsOutcome;
 
-EXPORT_C hFileListUploadedPartsOutcome hFileListUploadedPartsOutcome_New();
-EXPORT_C void hFileListUploadedPartsOutcome_Del(hFileListUploadedPartsOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileListUploadedPartsOutcome hFileListUploadedPartsOutcome_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileListUploadedPartsOutcome_Del(hFileListUploadedPartsOutcome self);
 
-EXPORT_C bool hFileListUploadedPartsOutcome_isSuccess(hFileListUploadedPartsOutcome self);
-EXPORT_C hPdsError hFileListUploadedPartsOutcome_error(hFileListUploadedPartsOutcome self);
-EXPORT_C hFileListUploadedPartsResult hFileListUploadedPartsOutcome_result(hFileListUploadedPartsOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hFileListUploadedPartsOutcome_isSuccess(hFileListUploadedPartsOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPdsError hFileListUploadedPartsOutcome_error(hFileListUploadedPartsOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileListUploadedPartsResult hFileListUploadedPartsOutcome_result(hFileListUploadedPartsOutcome self);
 
 #endif

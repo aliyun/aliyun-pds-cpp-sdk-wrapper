@@ -33,5 +33,7 @@ void hDirRenameRequest_Del(hDirRenameRequest self)
 
 void hDirRenameRequest_print(hDirRenameRequest self)
 {
-    std::cout << "hDirRenameRequest(" << ")" << std::endl;
+    std::cout << "hDirRenameRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

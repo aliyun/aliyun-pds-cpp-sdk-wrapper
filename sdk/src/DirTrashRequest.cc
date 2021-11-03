@@ -30,5 +30,7 @@ void hDirTrashRequest_Del(hDirTrashRequest self)
 
 void hDirTrashRequest_print(hDirTrashRequest self)
 {
-    std::cout << "hDirTrashRequest(" << ")" << std::endl;
+    std::cout << "hDirTrashRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

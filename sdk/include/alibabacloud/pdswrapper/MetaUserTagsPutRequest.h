@@ -23,11 +23,11 @@
 // ========== C-interface for hMetaUserTagsPutRequest
 typedef void* hMetaUserTagsPutRequest;
 
-EXPORT_C hMetaUserTagsPutRequest hMetaUserTagsPutRequest_New(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hMetaUserTagsPutRequest hMetaUserTagsPutRequest_New(char* driveID,
                                                 char* fileID,
                                                 hUserTagList userTags);
-EXPORT_C void hMetaUserTagsPutRequest_Del(hMetaUserTagsPutRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hMetaUserTagsPutRequest_Del(hMetaUserTagsPutRequest self);
 
-EXPORT_C void hMetaUserTagsPutRequest_print(hMetaUserTagsPutRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hMetaUserTagsPutRequest_print(hMetaUserTagsPutRequest self);
 
 #endif

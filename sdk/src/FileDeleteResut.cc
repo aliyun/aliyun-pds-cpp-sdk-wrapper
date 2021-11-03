@@ -21,5 +21,7 @@
 
 void hFileDeleteResult_print(hFileDeleteResult self)
 {
-    std::cout << "hFileDeleteResult()" << std::endl;
+    std::cout << "hFileDeleteResult("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

@@ -1,5 +1,5 @@
 #
-# Copyright 2009-2017 Alibaba Cloud All rights reserved.
+# Copyright 2009-2021 Alibaba Cloud All rights reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,12 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-cmake_minimum_required(VERSION 3.1)
-project(alibabacloud-pds-cpp-sdk-wrapper VERSION 0.1)
+project(cpp-sdk-wrapper VERSION ${version})
 
-# 指定为C++11 版本
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_VERBOSE_MAKEFILE ON)
 
 # common header
 file(GLOB sdk_wrapper_header "include/alibabacloud/pdswrapper/*.h")
@@ -36,6 +32,15 @@ file(GLOB sdk_src
     ${sdk_wrapper_src}
 )
 
+# extra define pass to source code
+if (BUILD_TESTS)
+    set(EXTRA_DEFINE "-DENABLE_PDS_TEST")
+else()
+    set(EXTRA_DEFINE "")
+endif()
+
+list(APPEND SDK_COMPILER_FLAGS "-std=c++11")
+
 # static lib
 add_library(${PROJECT_NAME}${STATIC_LIB_SUFFIX} STATIC
     ${sdk_header}
@@ -52,16 +57,11 @@ set_target_properties(${PROJECT_NAME}${STATIC_LIB_SUFFIX}
 
 target_include_directories(${PROJECT_NAME}${STATIC_LIB_SUFFIX}
     PRIVATE include
-    PRIVATE include/alibabacloud/pdswrapper
-)
+    PRIVATE ${PDS_SOURCE_DIR}/sdk/include)
 
 target_include_directories(${PROJECT_NAME}${STATIC_LIB_SUFFIX}
     PRIVATE ${CRYPTO_INCLUDE_DIRS}
     PRIVATE ${CLIENT_INCLUDE_DIRS})
-
-target_include_directories(${PROJECT_NAME}
-    PRIVATE "/usr/local/include"
-)
 
 target_compile_options(${PROJECT_NAME}${STATIC_LIB_SUFFIX}
     PRIVATE "${SDK_COMPILER_FLAGS}" "${EXTRA_DEFINE}")
@@ -83,8 +83,7 @@ if (BUILD_SHARED_LIBS)
 
     target_include_directories(${PROJECT_NAME}
         PRIVATE include
-        PRIVATE include/alibabacloud/pds
-        PRIVATE src/external/)
+        PRIVATE ${PDS_SOURCE_DIR}/sdk/include)
 
     target_include_directories(${PROJECT_NAME}
         PRIVATE ${CRYPTO_INCLUDE_DIRS}
@@ -98,18 +97,16 @@ if (BUILD_SHARED_LIBS)
         PRIVATE "-fvisibility=hidden")
     endif()
 
+    target_link_libraries(${PROJECT_NAME} ${PDS_LIBS})
     target_link_libraries(${PROJECT_NAME} ${CRYPTO_LIBS})
     target_link_libraries(${PROJECT_NAME} ${CLIENT_LIBS})
 endif()
 
-#target_link_libraries(${PROJECT_NAME} alibabacloud-pds-cpp-sdk)
-
 # install
-message(STATUS "sdk_wrapper_header: ${sdk_wrapper_header}")
 install(FILES ${sdk_wrapper_header}
-    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/alibabacloud/pdswrapper)
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/alibabacloud/pdswrapper/)
 
-install(TARGETS  ${PROJECT_NAME}${STATIC_LIB_SUFFIX}
+install(TARGETS ${PROJECT_NAME}${STATIC_LIB_SUFFIX}
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}

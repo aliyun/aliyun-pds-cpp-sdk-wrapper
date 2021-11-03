@@ -44,5 +44,7 @@ void hFileGetDownloadUrlRequest_setShareToken(hFileGetDownloadUrlRequest self, c
 
 void hFileGetDownloadUrlRequest_print(hFileGetDownloadUrlRequest self)
 {
-    std::cout << "hFileGetDownloadUrlRequest(" << ")" << std::endl;
+    std::cout << "hFileGetDownloadUrlRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

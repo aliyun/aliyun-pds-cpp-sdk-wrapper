@@ -31,5 +31,7 @@ void hFileTrashRequest_Del(hFileTrashRequest self)
 
 void hFileTrashRequest_print(hFileTrashRequest self)
 {
-    std::cout << "hFileTrashRequest(" << ")" << std::endl;
+    std::cout << "hFileTrashRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

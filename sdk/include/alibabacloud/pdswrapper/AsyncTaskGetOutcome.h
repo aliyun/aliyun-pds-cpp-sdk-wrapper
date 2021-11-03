@@ -26,11 +26,11 @@
 // ========== C-interface for hDirDeleteOutcome
 typedef void* hAsyncTaskGetOutcome;
 
-EXPORT_C hAsyncTaskGetOutcome hAsyncTaskGetOutcome_New();
-EXPORT_C void hAsyncTaskGetOutcome_Del(hAsyncTaskGetOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hAsyncTaskGetOutcome hAsyncTaskGetOutcome_New();
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hAsyncTaskGetOutcome_Del(hAsyncTaskGetOutcome self);
 
-EXPORT_C bool hAsyncTaskGetOutcome_isSuccess(hAsyncTaskGetOutcome self);
-EXPORT_C hPdsError hAsyncTaskGetOutcome_error(hAsyncTaskGetOutcome self);
-EXPORT_C hAsyncTaskGetResult hAsyncTaskGetOutcome_result(hAsyncTaskGetOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hAsyncTaskGetOutcome_isSuccess(hAsyncTaskGetOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPdsError hAsyncTaskGetOutcome_error(hAsyncTaskGetOutcome self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hAsyncTaskGetResult hAsyncTaskGetOutcome_result(hAsyncTaskGetOutcome self);
 
 #endif

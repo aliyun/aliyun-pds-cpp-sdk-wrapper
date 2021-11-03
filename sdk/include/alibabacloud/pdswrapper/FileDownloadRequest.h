@@ -24,36 +24,36 @@
 // ========== C-interface for hFileDownloadRequest
 typedef void* hFileDownloadRequest;
 
-EXPORT_C hFileDownloadRequest hFileDownloadRequest_New_1(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileDownloadRequest hFileDownloadRequest_New_1(char* driveID,
                                                 char* shareID,
                                                 char* fileID,
                                                 char* filePath);
-EXPORT_C hFileDownloadRequest hFileDownloadRequest_New_2(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileDownloadRequest hFileDownloadRequest_New_2(char* driveID,
                                                 char* shareID,
                                                 char* fileID,
                                                 char* filePath,
                                                 char* checkpointDir);
-EXPORT_C hFileDownloadRequest hFileDownloadRequest_New_3(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileDownloadRequest hFileDownloadRequest_New_3(char* driveID,
                                                 char* shareID,
                                                 char* fileID,
                                                 char* filePath,
                                                 char* checkpointDir,
                                                 uint64_t partSize,
                                                 uint32_t threadNum);
-EXPORT_C void hFileDownloadRequest_Del(hFileDownloadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileDownloadRequest_Del(hFileDownloadRequest self);
 
-EXPORT_C char* hFileDownloadRequest_FilePath(hFileDownloadRequest self);
-EXPORT_C char* hFileDownloadRequest_TempFilePath(hFileDownloadRequest self);
-EXPORT_C char* hFileDownloadRequest_DriveID(hFileDownloadRequest self);
-EXPORT_C char* hFileDownloadRequest_ShareID(hFileDownloadRequest self);
-EXPORT_C char* hFileDownloadRequest_FileID(hFileDownloadRequest self);
-EXPORT_C char* hFileDownloadRequest_ShareToken(hFileDownloadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileDownloadRequest_FilePath(hFileDownloadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileDownloadRequest_TempFilePath(hFileDownloadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileDownloadRequest_DriveID(hFileDownloadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileDownloadRequest_ShareID(hFileDownloadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileDownloadRequest_FileID(hFileDownloadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hFileDownloadRequest_ShareToken(hFileDownloadRequest self);
 
 
-EXPORT_C void hFileDownloadRequest_setShareToken(hFileDownloadRequest self, char* shareToken);
-EXPORT_C void hFileDownloadRequest_setTransferProgress(hFileDownloadRequest self, hTransferProgress progress);
-EXPORT_C void hFileDownloadRequest_setProgressControl(hFileDownloadRequest self, hProgressControl control);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileDownloadRequest_setShareToken(hFileDownloadRequest self, char* shareToken);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileDownloadRequest_setTransferProgress(hFileDownloadRequest self, hTransferProgress progress);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileDownloadRequest_setProgressControl(hFileDownloadRequest self, hProgressControl control);
 
-EXPORT_C void hFileDownloadRequest_print(hFileDownloadRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileDownloadRequest_print(hFileDownloadRequest self);
 
 #endif

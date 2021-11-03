@@ -24,11 +24,11 @@
 // ========== C-interface for hFileCompleteRequest
 typedef void* hFileCompleteRequest;
 
-EXPORT_C hFileCompleteRequest hFileCompleteRequest_New(char* driveID,
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileCompleteRequest hFileCompleteRequest_New(char* driveID,
                                                 char* fileID,
                                                 char* uploadID);
-EXPORT_C void hFileCompleteRequest_Del(hFileCompleteRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileCompleteRequest_Del(hFileCompleteRequest self);
 
-EXPORT_C void hFileCompleteRequest_print(hFileCompleteRequest self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileCompleteRequest_print(hFileCompleteRequest self);
 
 #endif

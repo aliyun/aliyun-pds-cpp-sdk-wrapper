@@ -22,8 +22,8 @@
 // ========== C-interface for hServiceResult
 typedef void* hServiceResult;
 
-EXPORT_C char* hServiceResult_RequestID(hServiceResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hServiceResult_RequestID(hServiceResult self);
 
-EXPORT_C void hServiceResult_print(hServiceResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hServiceResult_print(hServiceResult self);
 
 #endif

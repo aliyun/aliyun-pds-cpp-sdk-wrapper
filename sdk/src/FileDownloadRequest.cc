@@ -111,5 +111,7 @@ void hFileDownloadRequest_setProgressControl(hFileDownloadRequest self, hProgres
 
 void hFileDownloadRequest_print(hFileDownloadRequest self)
 {
-    std::cout << "hFileDownloadRequest(" << ")" << std::endl;
+    std::cout << "hFileDownloadRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

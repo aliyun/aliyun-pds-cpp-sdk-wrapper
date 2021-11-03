@@ -44,5 +44,7 @@ void hFileGetRequest_setShareToken(hFileGetRequest self, char* shareToken)
 
 void hFileGetRequest_print(hFileGetRequest self)
 {
-    std::cout << "hFileGetRequest(" << ")" << std::endl;
+    std::cout << "hFileGetRequest("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

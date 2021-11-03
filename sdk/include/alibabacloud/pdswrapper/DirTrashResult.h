@@ -22,10 +22,10 @@
 // ========== C-interface for hDirTrashResult
 typedef void* hDirTrashResult;
 
-EXPORT_C char* hDirTrashResult_DriveID(hDirTrashResult self);
-EXPORT_C char* hDirTrashResult_FileID(hDirTrashResult self);
-EXPORT_C char* hDirTrashResult_AsyncTaskID(hDirTrashResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirTrashResult_DriveID(hDirTrashResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirTrashResult_FileID(hDirTrashResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirTrashResult_AsyncTaskID(hDirTrashResult self);
 
-EXPORT_C void hDirTrashResult_print(hDirTrashResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirTrashResult_print(hDirTrashResult self);
 
 #endif

@@ -21,5 +21,7 @@
 
 void hFileTrashResult_print(hFileTrashResult self)
 {
-    std::cout << "hFileTrashResult()" << std::endl;
+    std::cout << "hFileTrashResult("
+        << "self=" << self;
+    std::cout <<")" << std::endl;
 }

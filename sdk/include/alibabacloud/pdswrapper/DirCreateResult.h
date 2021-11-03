@@ -23,13 +23,13 @@
 // ========== C-interface for hDirCreateResult
 typedef void* hDirCreateResult;
 
-EXPORT_C char* hDirCreateResult_DriveID(hDirCreateResult self);
-EXPORT_C char* hDirCreateResult_FileID(hDirCreateResult self);
-EXPORT_C char* hDirCreateResult_FileName(hDirCreateResult self);
-EXPORT_C char* hDirCreateResult_ParentFileID(hDirCreateResult self);
-EXPORT_C char* hDirCreateResult_Type(hDirCreateResult self);
-EXPORT_C bool hDirCreateResult_Exist(hDirCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirCreateResult_DriveID(hDirCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirCreateResult_FileID(hDirCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirCreateResult_FileName(hDirCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirCreateResult_ParentFileID(hDirCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hDirCreateResult_Type(hDirCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hDirCreateResult_Exist(hDirCreateResult self);
 
-EXPORT_C void hDirCreateResult_print(hDirCreateResult self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hDirCreateResult_print(hDirCreateResult self);
 
 #endif
