@@ -1,3 +1,2 @@
-sdk/build/*
-sample/dir/build/*
+/build/*
 *.ini
