@@ -34,6 +34,10 @@ include_directories(${PDS_SOURCE_DIR}/sdk/include)
 target_link_libraries(${PROJECT_NAME} cpp-sdk-wrapper)
 target_link_libraries(${PROJECT_NAME} ${PDS_LIBS})
 target_link_libraries(${PROJECT_NAME} ${CRYPTO_LIBS})
+
 target_link_libraries(${PROJECT_NAME} ${CLIENT_LIBS})
 
-target_link_libraries(${PROJECT_NAME} stdc++)
+if (NOT (${TARGET_OS} STREQUAL "WINDOWS"))
+    target_link_libraries(${PROJECT_NAME} stdc++)
+endif()
+

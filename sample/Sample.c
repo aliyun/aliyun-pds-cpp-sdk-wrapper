@@ -253,7 +253,7 @@ int testCreateFile(hPdsClient client) {
 
     // 上传第一块
     int partSize = 100*1024;
-    char data[partSize];
+    char data[100*1024+1];
     memset(data, '1', partSize);
     data[partSize] = 0;
 
