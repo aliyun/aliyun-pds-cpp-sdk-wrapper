@@ -111,3 +111,15 @@ bool hClientConfiguration_GetEnableRapidUpload(hClientConfiguration self)
     auto p = reinterpret_cast<AlibabaCloud::PDS::ClientConfiguration*>(self);
     return p->enableRapidUpload;
 }
+
+void hClientConfiguration_SetVerifySSL(hClientConfiguration self, bool verifySSL)
+{
+    auto p = reinterpret_cast<AlibabaCloud::PDS::ClientConfiguration*>(self);
+    p->verifySSL = verifySSL;
+}
+
+bool hClientConfiguration_GetVerifySSL(hClientConfiguration self)
+{
+    auto p = reinterpret_cast<AlibabaCloud::PDS::ClientConfiguration*>(self);
+    return p->verifySSL;
+}

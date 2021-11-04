@@ -73,15 +73,15 @@ if (${TARGET_OS} STREQUAL "WINDOWS")
 	    set(WLIB_TARGET "x64")
 	endif()
 	set(CRYPTO_LIBS
-		${PDS_CPP_SDK_SOURCE_DIR}/third_party/lib/${WLIB_TARGET}/ssleay32.lib
-		${PDS_CPP_SDK_SOURCE_DIR}/third_party/lib/${WLIB_TARGET}/libeay32.lib)
+		${PDS_SOURCE_DIR}/third_party/lib/${WLIB_TARGET}/ssleay32.lib
+		${PDS_SOURCE_DIR}/third_party/lib/${WLIB_TARGET}/libeay32.lib)
 	set(CRYPTO_INCLUDE_DIRS
-		${PDS_CPP_SDK_SOURCE_DIR}/third_party/include)
+		${PDS_SOURCE_DIR}/third_party/include)
 
 	set(CLIENT_LIBS
-		${PDS_CPP_SDK_SOURCE_DIR}/third_party/lib/${WLIB_TARGET}/libcurl.lib)
+		${PDS_SOURCE_DIR}/third_party/lib/${WLIB_TARGET}/libcurl.lib)
 	set(CLIENT_INCLUDE_DIRS
-		${PDS_CPP_SDK_SOURCE_DIR}/third_party/include)
+		${PDS_SOURCE_DIR}/third_party/include)
 else()
 	include(FindCURL)
 	include(FindOpenSSL)

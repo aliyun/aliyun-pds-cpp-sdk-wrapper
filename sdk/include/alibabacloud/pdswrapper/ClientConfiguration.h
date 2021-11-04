@@ -51,4 +51,7 @@ EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hClientConfiguration_GetEnableCrc64(hClien
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hClientConfiguration_SetEnableRapidUpload(hClientConfiguration self, bool enableRapidUpload);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hClientConfiguration_GetEnableRapidUpload(hClientConfiguration self);
 
+EXPORT_C ALIBABACLOUD_PDS_EXPORT void hClientConfiguration_SetVerifySSL(hClientConfiguration self, bool verifySSL);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT bool hClientConfiguration_GetVerifySSL(hClientConfiguration self);
+
 #endif
