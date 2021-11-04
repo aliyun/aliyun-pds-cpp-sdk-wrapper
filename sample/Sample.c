@@ -547,6 +547,8 @@ int main()
 
     hClientConfiguration conf = hClientConfiguration_New();
     hClientConfiguration_SetEnableRapidUpload(conf, false);
+    hClientConfiguration_SetVerifySSL(conf, false);
+
     hCredentials credentials = hCredentials_New("");
     hCredentials_setAccessToken(credentials, gAccessToken);
     hPdsClient client = hPdsClient_New_3(gEndpoint, credentials, conf);
