@@ -1,5 +1,12 @@
 # 阿里云PDS C++工具 wrapper 套件
 
+编译前准备，下载 aliyun-pds-cpp-sdk 和 aliyun-pds-cpp-sdk-wrapper
+
+``` txt
+git clone https://github.com/aliyun/aliyun-pds-cpp-sdk-wrapper
+git clone https://github.com/aliyun/aliyun-pds-cpp-sdk
+```
+
 windows
 
 ``` txt
