@@ -6,7 +6,8 @@ windows
 mkdir build
 cd build
 cmake -DPDS_SOURCE_DIR="C:\Users\Administrator\Desktop\aliyun-pds-cpp-sdk" -DPDS_LIBS_DIR="C:\Users\Administrator\Desktop\aliyun-pds-cpp-sdk\build\lib\Debug" -DBUILD_SHARED_LIBS=OFF ..
-make
+
+使用 VS studio 打开 build 目录下的 sln 文件，进行编译
 ```
 
 linux
