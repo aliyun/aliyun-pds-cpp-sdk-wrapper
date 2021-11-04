@@ -39,7 +39,7 @@ EXPORT_C ALIBABACLOUD_PDS_EXPORT hPartInfoRespList hPartInfoRespList_New();
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoRespList_Del(hPartInfoRespList self);
 
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoRespList_add(hPartInfoRespList self, char* key, char* val);
-EXPORT_C ALIBABACLOUD_PDS_EXPORT int hPartInfoRespList_size(hPartInfoRespList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT size_t hPartInfoRespList_size(hPartInfoRespList self);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT hPartInfoResp hPartInfoRespList_at(hPartInfoRespList self, int i);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoRespList_print(hPartInfoRespList self);
 

@@ -219,7 +219,7 @@ void hFileItem_print(hFileItem self)
 }
 
 // ========== C-interface for hFileItemList
-int hFileItemList_size(hFileItemList self)
+size_t hFileItemList_size(hFileItemList self)
 {
     auto p = reinterpret_cast<FileItemList*>(self);
     return p->size();
@@ -235,7 +235,7 @@ hFileItem hFileItemList_at(hFileItemList self, int i)
 void hFileItemList_print(hFileItemList self)
 {
     std::cout << "[";
-    for(int i = 0; i < hFileItemList_size(self); ++i) {
+    for(size_t i = 0; i < hFileItemList_size(self); ++i) {
         hFileItem_print(hFileItemList_at(self, i));
     }
     std::cout << "]" << std::endl;

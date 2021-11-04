@@ -70,7 +70,7 @@ void hPartInfoRespList_add(hPartInfoRespList self, hPartInfoResp partInfo)
     p->push_back(*p1);
 }
 
-int hPartInfoRespList_size(hPartInfoRespList self)
+size_t hPartInfoRespList_size(hPartInfoRespList self)
 {
     auto p = reinterpret_cast<PartInfoRespList*>(self);
     return p->size();

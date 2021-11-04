@@ -22,7 +22,7 @@
 // ========== C-interface for hPart
 typedef void* hPart;
 
-EXPORT_C ALIBABACLOUD_PDS_EXPORT hPart hPart_New(int64_t partNumber, int64_t partSize, char* etag);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPart hPart_New(int32_t partNumber, int64_t partSize, char* etag);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPart_Del(hPart self);
 
 EXPORT_C ALIBABACLOUD_PDS_EXPORT int64_t hPart_PartNumber(hPart self);
@@ -39,7 +39,7 @@ EXPORT_C ALIBABACLOUD_PDS_EXPORT hPartList hPartList_New();
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartList_Del(hPartList self);
 
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartList_add(hPartList self, hPart partInfo);
-EXPORT_C ALIBABACLOUD_PDS_EXPORT int hPartList_size(hPartList self);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT size_t hPartList_size(hPartList self);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT hPart hPartList_at(hPartList self, int i);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartList_print(hPartList self);
 

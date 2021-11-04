@@ -43,7 +43,7 @@ void hUserTagList_add(hUserTagList self, char* key, char* val)
     p->push_back(tag);
 }
 
-int hUserTagList_size(hUserTagList self)
+size_t hUserTagList_size(hUserTagList self)
 {
     auto p = reinterpret_cast<UserTagList*>(self);
     return p->size();
@@ -85,7 +85,7 @@ void hUserTagMap_add(hUserTagMap self, char* key, char* val)
     p->insert(std::pair<std::string, std::string>(key, val));
 }
 
-int hUserTagMap_size(hUserTagMap self)
+size_t hUserTagMap_size(hUserTagMap self)
 {
     auto p = reinterpret_cast<UserTagMap*>(self);
     return p->size();
@@ -105,7 +105,7 @@ hUserTag hUserTagMap_at(hUserTagMap self, int i)
 void hUserTagMap_print(hUserTagMap self)
 {
     std::cout << "[";
-    for(int i = 0; i < hUserTagMap_size(self); ++i) {
+    for(size_t i = 0; i < hUserTagMap_size(self); ++i) {
         hUserTag tag = hUserTagMap_at(self, i);
         std::cout << "(" << tag.key << "->" << tag.val << ")" << std::endl;
     }
@@ -130,7 +130,7 @@ void hUserTagKeyList_add(hUserTagKeyList self, char* key)
     p->push_back(key);
 }
 
-int hUserTagKeyList_size(hUserTagKeyList self)
+size_t hUserTagKeyList_size(hUserTagKeyList self)
 {
     auto p = reinterpret_cast<UserTagKeyList*>(self);
     return p->size();

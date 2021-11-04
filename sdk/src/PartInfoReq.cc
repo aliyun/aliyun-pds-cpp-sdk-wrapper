@@ -76,7 +76,7 @@ void hPartInfoReqList_add(hPartInfoReqList self, hPartInfoReq partInfo)
     p->push_back(*p1);
 }
 
-int hPartInfoReqList_size(hPartInfoReqList self)
+size_t hPartInfoReqList_size(hPartInfoReqList self)
 {
     auto p = reinterpret_cast<PartInfoReqList*>(self);
     return p->size();

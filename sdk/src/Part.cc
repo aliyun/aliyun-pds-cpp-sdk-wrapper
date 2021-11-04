@@ -24,7 +24,7 @@ using PartList = std::vector<Part>;
 
 
 // ========== C-interface for hPart
-hPart hPart_New(int64_t partNumber, int64_t partSize, char* etag)
+hPart hPart_New(int32_t partNumber, int64_t partSize, char* etag)
 {
     return new (std::nothrow) Part(partNumber, partSize, etag);
 }
@@ -76,7 +76,7 @@ void hPartList_add(hPartList self, hPart partInfo)
     p->push_back(*p1);
 }
 
-int hPartList_size(hPartList self)
+size_t hPartList_size(hPartList self)
 {
     auto p = reinterpret_cast<PartList*>(self);
     return p->size();
