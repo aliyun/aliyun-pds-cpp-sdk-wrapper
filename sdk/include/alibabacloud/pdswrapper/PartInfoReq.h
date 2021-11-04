@@ -40,7 +40,7 @@ EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoReqList_Del(hPartInfoReqList self
 
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoReqList_add(hPartInfoReqList self, hPartInfoReq partInfo);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT size_t hPartInfoReqList_size(hPartInfoReqList self);
-EXPORT_C ALIBABACLOUD_PDS_EXPORT hPartInfoReq hPartInfoReqList_at(hPartInfoReqList self, int i);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPartInfoReq hPartInfoReqList_at(hPartInfoReqList self, size_t i);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartInfoReqList_print(hPartInfoReqList self);
 
 #endif

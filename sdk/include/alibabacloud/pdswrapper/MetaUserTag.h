@@ -34,7 +34,7 @@ EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagList_Del(hUserTagList self);
 
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagList_add(hUserTagList self, char* key, char* val);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT size_t hUserTagList_size(hUserTagList self);
-EXPORT_C ALIBABACLOUD_PDS_EXPORT struct hUserTag hUserTagList_at(hUserTagList self, int i);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT struct hUserTag hUserTagList_at(hUserTagList self, size_t i);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagList_print(hUserTagList self);
 
 // ========== C-interface for hUserTagMap
@@ -45,7 +45,7 @@ EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagMap_Del(hUserTagMap self);
 
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagMap_add(hUserTagMap self, char* key, char* val);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT size_t hUserTagMap_size(hUserTagMap self);
-EXPORT_C ALIBABACLOUD_PDS_EXPORT struct hUserTag hUserTagMap_at(hUserTagList self, int i);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT struct hUserTag hUserTagMap_at(hUserTagList self, size_t i);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagMap_print(hUserTagMap self);
 
 // ========== C-interface for hUserTagKeyList
@@ -56,7 +56,7 @@ EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagKeyList_Del(hUserTagKeyList self);
 
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagKeyList_add(hUserTagKeyList self, char* key);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT size_t hUserTagKeyList_size(hUserTagKeyList self);
-EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hUserTagKeyList_at(hUserTagKeyList self, int i);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT char* hUserTagKeyList_at(hUserTagKeyList self, size_t i);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hUserTagKeyList_print(hUserTagKeyList self);
 
 #endif

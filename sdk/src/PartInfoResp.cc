@@ -76,7 +76,7 @@ size_t hPartInfoRespList_size(hPartInfoRespList self)
     return p->size();
 }
 
-hPartInfoResp hPartInfoRespList_at(hPartInfoRespList self, int i)
+hPartInfoResp hPartInfoRespList_at(hPartInfoRespList self, size_t i)
 {
     auto p = reinterpret_cast<PartInfoRespList*>(self);
     PartInfoResp& p2 = p->at(i);;

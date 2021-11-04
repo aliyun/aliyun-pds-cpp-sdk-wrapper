@@ -49,7 +49,7 @@ size_t hUserTagList_size(hUserTagList self)
     return p->size();
 }
 
-hUserTag hUserTagList_at(hUserTagList self, int i)
+hUserTag hUserTagList_at(hUserTagList self, size_t i)
 {
     auto p = reinterpret_cast<UserTagList*>(self);
     AlibabaCloud::PDS::UserTag& tag = p->at(i);
@@ -91,7 +91,7 @@ size_t hUserTagMap_size(hUserTagMap self)
     return p->size();
 }
 
-hUserTag hUserTagMap_at(hUserTagMap self, int i)
+hUserTag hUserTagMap_at(hUserTagMap self, size_t i)
 {
     auto p = reinterpret_cast<UserTagMap*>(self);
     auto element = std::next(p->begin(), i);
@@ -136,10 +136,10 @@ size_t hUserTagKeyList_size(hUserTagKeyList self)
     return p->size();
 }
 
-char* hUserTagKeyList_at(hUserTagKeyList self, int i)
+char* hUserTagKeyList_at(hUserTagKeyList self, size_t i)
 {
     auto p = reinterpret_cast<UserTagKeyList*>(self);
-    std::string& key = p->at(i);
+    std::string& key = p->at(int(i));
     return const_cast<char*>(key.c_str());
 }
 

@@ -225,7 +225,7 @@ size_t hFileItemList_size(hFileItemList self)
     return p->size();
 }
 
-hFileItem hFileItemList_at(hFileItemList self, int i)
+hFileItem hFileItemList_at(hFileItemList self, size_t i)
 {
     auto p = reinterpret_cast<FileItemList*>(self);
     AlibabaCloud::PDS::FileItem& item = p->at(i);

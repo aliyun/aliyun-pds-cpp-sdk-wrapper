@@ -82,7 +82,7 @@ size_t hPartInfoReqList_size(hPartInfoReqList self)
     return p->size();
 }
 
-hPartInfoReq hPartInfoReqList_at(hPartInfoReqList self, int i)
+hPartInfoReq hPartInfoReqList_at(hPartInfoReqList self, size_t i)
 {
     auto p = reinterpret_cast<PartInfoReqList*>(self);
     PartInfoReq& p2 = p->at(i);;

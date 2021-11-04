@@ -40,7 +40,7 @@ EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartList_Del(hPartList self);
 
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartList_add(hPartList self, hPart partInfo);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT size_t hPartList_size(hPartList self);
-EXPORT_C ALIBABACLOUD_PDS_EXPORT hPart hPartList_at(hPartList self, int i);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hPart hPartList_at(hPartList self, size_t i);
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hPartList_print(hPartList self);
 
 #endif

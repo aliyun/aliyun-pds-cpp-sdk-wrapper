@@ -60,7 +60,7 @@ typedef void* hFileItemList;
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileItemList_Del(hFileItemList self);
 
 EXPORT_C ALIBABACLOUD_PDS_EXPORT size_t hFileItemList_size(hFileItemList self);
-EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileItem hFileItemList_at(hFileItemList self, int i);
+EXPORT_C ALIBABACLOUD_PDS_EXPORT hFileItem hFileItemList_at(hFileItemList self, size_t i);
 
 EXPORT_C ALIBABACLOUD_PDS_EXPORT void hFileItemList_print(hFileItemList self);
 

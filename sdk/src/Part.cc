@@ -82,7 +82,7 @@ size_t hPartList_size(hPartList self)
     return p->size();
 }
 
-hPart hPartList_at(hPartList self, int i)
+hPart hPartList_at(hPartList self, size_t i)
 {
     auto p = reinterpret_cast<PartList*>(self);
     Part& p2 = p->at(i);;
