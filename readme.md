@@ -5,8 +5,8 @@ windows
 ``` txt
 mkdir build
 cd build
-cmake -DPDS_SOURCE_DIR=C:\Users\Administrator\Desktop\aliyun-pds-cpp-sdk \
-      -DPDS_LIBS_DIR=C:\Users\Administrator\Desktop\aliyun-pds-cpp-sdk\build\lib\Debug \
+cmake -DPDS_SOURCE_DIR="C:\Users\Administrator\Desktop\aliyun-pds-cpp-sdk" \
+      -DPDS_LIBS_DIR="C:\Users\Administrator\Desktop\aliyun-pds-cpp-sdk\build\lib\Debug" \
       -DBUILD_SHARED_LIBS=OFF ..
 make
 ```
